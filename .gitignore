@@ -1,0 +1,5 @@
+*.log
+*.temp
+*.xmi
+access_log.*
+/vendor
