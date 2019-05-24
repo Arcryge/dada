@@ -3,3 +3,8 @@
 *.xmi
 access_log.*
 /vendor
+*.xmi
+*.xmi
+*.xmi
+*.tmp
+*.2019-05-24
