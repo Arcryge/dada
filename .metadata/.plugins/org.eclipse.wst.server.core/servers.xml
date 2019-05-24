@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<servers>
+  <server auto-publish-setting="2" auto-publish-time="1" configuration-id="/Servers/Tomcat v6.0 Server at localhost-config" deployDir="wtpwebapps" hostname="localhost" id="Tomcat v6.0 Server at localhost" name="Tomcat v6.0 Server at localhost" runtime-id="Apache Tomcat v6.0" serveModulesWithoutPublish="true" server-type="org.eclipse.jst.server.tomcat.60" server-type-id="org.eclipse.jst.server.tomcat.60" start-timeout="150" stop-timeout="15" testEnvironment="true" timestamp="2">
+    <list key="modules" value0="seftrain::org.eclipse.jst.j2ee.server:seftrain::jst.web::2.4"/>
+  </server>
+  <server auto-publish-setting="2" auto-publish-time="1" configuration-id="/Servers/Tomcat v7.0 Server at localhost-config" deployDir="C:\DWDevEnvironment\tomcat\apache-tomcat-7.0.93\webapps" hostname="localhost" id="Tomcat v7.0 Server at localhost" name="Tomcat v7.0 Server at localhost" runtime-id="Apache Tomcat v7.0" serveModulesWithoutPublish="true" server-type="org.eclipse.jst.server.tomcat.70" server-type-id="org.eclipse.jst.server.tomcat.70" start-timeout="150" stop-timeout="15" testEnvironment="false" timestamp="21">
+    <list key="modules" value0="chedan2::org.eclipse.jst.jee.server:chedan2::jst.web::3.0"/>
+  </server>
+</servers>

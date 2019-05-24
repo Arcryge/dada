@@ -1,0 +1,11 @@
+content_assist_autoactivation=false
+content_assist_autoinsert=false
+content_assist_userDefinedTasks=false
+eclipse.preferences.version=1
+problem_classpath=warning
+problem_imports=warning
+problem_properties=ignore
+problem_security=warning
+problem_tasks=ignore
+useAnnotationsPrefPage=true
+useQuickDiffPrefPage=true

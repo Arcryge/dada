@@ -1,0 +1,10 @@
+/**
+ * @author Arcry
+ * @date 2019年5月20日
+ * @time 下午4:03:36
+ */
+package com.dada.rest.service;
+
+public interface ContentService {
+
+}

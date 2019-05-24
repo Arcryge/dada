@@ -1,0 +1,25 @@
+/**
+ * @author Arcry
+ * @date 2019年5月24日
+ * @time 上午11:32:20
+ */
+package com.dada.rest.service.impl;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.dada.common.pojo.DadaResult;
+import com.dada.rest.dao.JedisClient;
+import com.dada.rest.service.RedisService;
+
+public class RedisServiceImpl implements RedisService {
+
+	@Autowired
+	private JedisClient jedisClient;
+	@Override
+	public DadaResult syncContent(long congtentCid) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+
+}

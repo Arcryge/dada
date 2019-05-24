@@ -1,0 +1,10 @@
+/**
+ * @author Arcry
+ * @date 2019年5月20日
+ * @time 上午11:27:10
+ */
+package com.dada.service;
+
+public class ContentCategoryService {
+
+}

@@ -1,0 +1,33 @@
+/**
+ * @author Arcry
+ * @date 2019年5月20日
+ * @time 下午4:07:46
+ */
+package com.dada.rest.controller;
+
+/**
+ * 内容管理controller
+ *  
+ * @author Arcry
+ * @version 0.1
+ * @date 2019年5月20日 下午4:08:00
+ */
+@Controller
+@RequestMapping("/content")
+public class ContentController {
+
+	@Autowired
+	private ContentService contentService;
+	
+	@RequestMapping("/list/{contentCategoryId}")
+	@ResponseBody
+	public TaotaoResult getContentList(@PathVariable Long contentCategoryId) {
+		try {
+			List<TbContent> list = contentService.getContentList(contentCategoryId);
+			return TaotaoResult.ok(list);
+		} catch (Exception e) {
+			e.printStackTrace();
+			return TaotaoResult.build(500, ExceptionUtil.getStackTrace(e));
+		}
+	}
+}

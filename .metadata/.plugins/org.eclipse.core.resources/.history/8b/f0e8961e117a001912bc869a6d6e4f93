@@ -1,0 +1,38 @@
+/**
+ * @author Arcry
+ * @date 2019年5月19日
+ * @time 下午4:31:15
+ */
+package com.dada.service.impl;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.dada.mapper.TbItemParamItemMapper;
+import com.dada.pojo.TbItemParamExample;
+import com.dada.pojo.TbItemParamItemExample;
+import com.dada.pojo.TbContentCategoryExample.Criteria;
+import com.dada.service.ItemParamItemService;
+
+/**
+ * 
+ * 展示商品规格参数 
+ * @author Arcry
+ * @version 0.1
+ * @date 2019年5月19日 下午4:31:30
+ */
+@Service
+public class ItemParamItemServiceImpl implements ItemParamItemService {
+
+	@Autowired
+	private TbItemParamItemMapper itemParamItemMapper;
+
+	@Override
+	public String getItemParamByItemId(Long itemId) {
+		//根据商品id查询规格参数
+		TbItemParamItemExample example = new TbItemParamItemExample();
+
+		return null;
+	}
+
+}

@@ -1,0 +1,2 @@
+INDEX VERSION 1.4+C:\DWDevEnvironment\eclipse-oxygen\eclipse-workspace\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+3453463556.index

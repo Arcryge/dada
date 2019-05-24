@@ -1,0 +1,35 @@
+/**
+ * @author Arcry
+ * @date 2019年5月18日
+ * @time 上午9:31:45
+ */
+package com.dada.controller;
+
+import java.io.File;
+import java.io.FileInputStream;
+
+import org.apache.commons.net.ftp.FTPClient;
+import org.junit.Test;
+
+public class FTPTest {
+
+	@Test
+	public void testFtpClient() throws Exception {
+		//创建一个FtpClient对象
+		FTPClient ftpClient = new FTPClient();
+		//创建FTP连接
+		ftpClient.connect("192.168.86.128",21);
+		//登录ftp服务器，使用用户名和密码
+		ftpClient.login("ftpuser", "ftpuser");
+		//上传文件
+		//读取本地文件
+		FileInputStream inputStream = new FileInputStream(new File(("‪C:\\Users\\97912\\Desktop\\dada\\image\\JJ.jpg")));
+		//设置上传的路径
+		ftpClient.changeWorkingDirectory("/home/ftpuser/www/images");
+		// 第一个参数：服务器端文件名
+		// 第二个参数：上传文档的inputStream
+		ftpClient.storeFile("hello1.jpg", inputStream );
+		//关闭连接
+	}
+
+}

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<libraryInfos>
+<libraryInfo home="C:\DWDevEnvironment\eclipse-oxygen\eclipse\jdk\jdk1.8.0_144" version="1.8.0_144">
+<bootpath>
+<entry path="C:\DWDevEnvironment\eclipse-oxygen\eclipse\jdk\jdk1.8.0_144\jre\lib\resources.jar"/>
+<entry path="C:\DWDevEnvironment\eclipse-oxygen\eclipse\jdk\jdk1.8.0_144\jre\lib\rt.jar"/>
+<entry path="C:\DWDevEnvironment\eclipse-oxygen\eclipse\jdk\jdk1.8.0_144\jre\lib\sunrsasign.jar"/>
+<entry path="C:\DWDevEnvironment\eclipse-oxygen\eclipse\jdk\jdk1.8.0_144\jre\lib\jsse.jar"/>
+<entry path="C:\DWDevEnvironment\eclipse-oxygen\eclipse\jdk\jdk1.8.0_144\jre\lib\jce.jar"/>
+<entry path="C:\DWDevEnvironment\eclipse-oxygen\eclipse\jdk\jdk1.8.0_144\jre\lib\charsets.jar"/>
+<entry path="C:\DWDevEnvironment\eclipse-oxygen\eclipse\jdk\jdk1.8.0_144\jre\lib\jfr.jar"/>
+<entry path="C:\DWDevEnvironment\eclipse-oxygen\eclipse\jdk\jdk1.8.0_144\jre\classes"/>
+</bootpath>
+<extensionDirs>
+<entry path="C:\DWDevEnvironment\eclipse-oxygen\eclipse\jdk\jdk1.8.0_144\jre\lib\ext"/>
+<entry path="C:\WINDOWS\Sun\Java\lib\ext"/>
+</extensionDirs>
+<endorsedDirs>
+<entry path="C:\DWDevEnvironment\eclipse-oxygen\eclipse\jdk\jdk1.8.0_144\jre\lib\endorsed"/>
+</endorsedDirs>
+</libraryInfo>
+<libraryInfo home="C:\DWDevEnvironment\eclipse-oxygen\eclipse\jdk\jdk1.8.0_144\jre" version="1.8.0_144">
+<bootpath>
+<entry path="C:\DWDevEnvironment\eclipse-oxygen\eclipse\jdk\jdk1.8.0_144\jre\lib\resources.jar"/>
+<entry path="C:\DWDevEnvironment\eclipse-oxygen\eclipse\jdk\jdk1.8.0_144\jre\lib\rt.jar"/>
+<entry path="C:\DWDevEnvironment\eclipse-oxygen\eclipse\jdk\jdk1.8.0_144\jre\lib\sunrsasign.jar"/>
+<entry path="C:\DWDevEnvironment\eclipse-oxygen\eclipse\jdk\jdk1.8.0_144\jre\lib\jsse.jar"/>
+<entry path="C:\DWDevEnvironment\eclipse-oxygen\eclipse\jdk\jdk1.8.0_144\jre\lib\jce.jar"/>
+<entry path="C:\DWDevEnvironment\eclipse-oxygen\eclipse\jdk\jdk1.8.0_144\jre\lib\charsets.jar"/>
+<entry path="C:\DWDevEnvironment\eclipse-oxygen\eclipse\jdk\jdk1.8.0_144\jre\lib\jfr.jar"/>
+<entry path="C:\DWDevEnvironment\eclipse-oxygen\eclipse\jdk\jdk1.8.0_144\jre\classes"/>
+</bootpath>
+<extensionDirs>
+<entry path="C:\DWDevEnvironment\eclipse-oxygen\eclipse\jdk\jdk1.8.0_144\jre\lib\ext"/>
+<entry path="C:\WINDOWS\Sun\Java\lib\ext"/>
+</extensionDirs>
+<endorsedDirs>
+<entry path="C:\DWDevEnvironment\eclipse-oxygen\eclipse\jdk\jdk1.8.0_144\jre\lib\endorsed"/>
+</endorsedDirs>
+</libraryInfo>
+<libraryInfo home="C:\eclipse\jdk\jdk1.8.0_144" version="1.8.0_144">
+<bootpath>
+<entry path="C:\eclipse\jdk\jdk1.8.0_144\jre\lib\resources.jar"/>
+<entry path="C:\eclipse\jdk\jdk1.8.0_144\jre\lib\rt.jar"/>
+<entry path="C:\eclipse\jdk\jdk1.8.0_144\jre\lib\sunrsasign.jar"/>
+<entry path="C:\eclipse\jdk\jdk1.8.0_144\jre\lib\jsse.jar"/>
+<entry path="C:\eclipse\jdk\jdk1.8.0_144\jre\lib\jce.jar"/>
+<entry path="C:\eclipse\jdk\jdk1.8.0_144\jre\lib\charsets.jar"/>
+<entry path="C:\eclipse\jdk\jdk1.8.0_144\jre\lib\jfr.jar"/>
+<entry path="C:\eclipse\jdk\jdk1.8.0_144\jre\classes"/>
+</bootpath>
+<extensionDirs>
+<entry path="C:\eclipse\jdk\jdk1.8.0_144\jre\lib\ext"/>
+<entry path="C:\Windows\Sun\Java\lib\ext"/>
+</extensionDirs>
+<endorsedDirs>
+<entry path="C:\eclipse\jdk\jdk1.8.0_144\jre\lib\endorsed"/>
+</endorsedDirs>
+</libraryInfo>
+<libraryInfo home="C:\eclipse\jdk\jdk1.8.0_144\jre" version="1.8.0_144">
+<bootpath>
+<entry path="C:\eclipse\jdk\jdk1.8.0_144\jre\lib\resources.jar"/>
+<entry path="C:\eclipse\jdk\jdk1.8.0_144\jre\lib\rt.jar"/>
+<entry path="C:\eclipse\jdk\jdk1.8.0_144\jre\lib\sunrsasign.jar"/>
+<entry path="C:\eclipse\jdk\jdk1.8.0_144\jre\lib\jsse.jar"/>
+<entry path="C:\eclipse\jdk\jdk1.8.0_144\jre\lib\jce.jar"/>
+<entry path="C:\eclipse\jdk\jdk1.8.0_144\jre\lib\charsets.jar"/>
+<entry path="C:\eclipse\jdk\jdk1.8.0_144\jre\lib\jfr.jar"/>
+<entry path="C:\eclipse\jdk\jdk1.8.0_144\jre\classes"/>
+</bootpath>
+<extensionDirs>
+<entry path="C:\eclipse\jdk\jdk1.8.0_144\jre\lib\ext"/>
+<entry path="C:\Windows\Sun\Java\lib\ext"/>
+</extensionDirs>
+<endorsedDirs>
+<entry path="C:\eclipse\jdk\jdk1.8.0_144\jre\lib\endorsed"/>
+</endorsedDirs>
+</libraryInfo>
+<libraryInfo home="C:\DWDevEnvironment\Java\jdk1.6.0_45_x64" version="1.6.0_45">
+<bootpath>
+<entry path="C:\DWDevEnvironment\Java\jdk1.6.0_45_x64\jre\lib\resources.jar"/>
+<entry path="C:\DWDevEnvironment\Java\jdk1.6.0_45_x64\jre\lib\rt.jar"/>
+<entry path="C:\DWDevEnvironment\Java\jdk1.6.0_45_x64\jre\lib\sunrsasign.jar"/>
+<entry path="C:\DWDevEnvironment\Java\jdk1.6.0_45_x64\jre\lib\jsse.jar"/>
+<entry path="C:\DWDevEnvironment\Java\jdk1.6.0_45_x64\jre\lib\jce.jar"/>
+<entry path="C:\DWDevEnvironment\Java\jdk1.6.0_45_x64\jre\lib\charsets.jar"/>
+<entry path="C:\DWDevEnvironment\Java\jdk1.6.0_45_x64\jre\lib\modules\jdk.boot.jar"/>
+<entry path="C:\DWDevEnvironment\Java\jdk1.6.0_45_x64\jre\classes"/>
+</bootpath>
+<extensionDirs>
+<entry path="C:\DWDevEnvironment\Java\jdk1.6.0_45_x64\jre\lib\ext"/>
+<entry path="C:\WINDOWS\Sun\Java\lib\ext"/>
+</extensionDirs>
+<endorsedDirs>
+<entry path="C:\DWDevEnvironment\Java\jdk1.6.0_45_x64\jre\lib\endorsed"/>
+</endorsedDirs>
+</libraryInfo>
+<libraryInfo home="C:\DWDevEnvironment\Java\jdk1.7.0_67_x64" version="1.7.0_67">
+<bootpath>
+<entry path="C:\DWDevEnvironment\Java\jdk1.7.0_67_x64\jre\lib\resources.jar"/>
+<entry path="C:\DWDevEnvironment\Java\jdk1.7.0_67_x64\jre\lib\rt.jar"/>
+<entry path="C:\DWDevEnvironment\Java\jdk1.7.0_67_x64\jre\lib\sunrsasign.jar"/>
+<entry path="C:\DWDevEnvironment\Java\jdk1.7.0_67_x64\jre\lib\jsse.jar"/>
+<entry path="C:\DWDevEnvironment\Java\jdk1.7.0_67_x64\jre\lib\jce.jar"/>
+<entry path="C:\DWDevEnvironment\Java\jdk1.7.0_67_x64\jre\lib\charsets.jar"/>
+<entry path="C:\DWDevEnvironment\Java\jdk1.7.0_67_x64\jre\lib\jfr.jar"/>
+<entry path="C:\DWDevEnvironment\Java\jdk1.7.0_67_x64\jre\classes"/>
+</bootpath>
+<extensionDirs>
+<entry path="C:\DWDevEnvironment\Java\jdk1.7.0_67_x64\jre\lib\ext"/>
+<entry path="C:\WINDOWS\Sun\Java\lib\ext"/>
+</extensionDirs>
+<endorsedDirs>
+<entry path="C:\DWDevEnvironment\Java\jdk1.7.0_67_x64\jre\lib\endorsed"/>
+</endorsedDirs>
+</libraryInfo>
+</libraryInfos>

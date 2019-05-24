@@ -1,0 +1,54 @@
+/**
+ * @author Arcry
+ * @date 2019年5月20日
+ * @time 上午11:29:16
+ */
+package com.dada.service.impl;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.dada.common.pojo.EUTreeNode;
+import com.dada.mapper.TbContentCategoryMapper;
+import com.dada.pojo.TbContentCategory;
+import com.dada.pojo.TbContentCategoryExample;
+import com.dada.service.ContentCategoryService;
+
+/**
+ * 内容分类管理
+ *  
+ * @author Arcry
+ * @version 0.1
+ * @date 2019年5月20日 上午11:30:12
+ */
+@Service
+public class ContentCategoryServiceImpl implements ContentCategoryService {
+
+	@Autowired
+	private TbContentCategoryMapper contentCategoryMapper;
+	
+	@Override
+	public List<EUTreeNode> getCategoryList(long parentId) {
+		//根据parentid查询节点列表
+		TbContentCategoryExample example = new TbContentCategoryExample();
+		Criteria criteria = example.createCriteria();
+		criteria.andParentIdEqualTo(parentId);
+		//执行查询
+		List<TbContentCategory> list = contentCategoryMapper.selectByExample(example);
+		List<EUTreeNode> resultList = new ArrayList<>();
+		for (TbContentCategory tbContentCategory : list) {
+			//创建一个节点
+			EUTreeNode node = new EUTreeNode();
+			node.setId(tbContentCategory.getId());
+			node.setText(tbContentCategory.getName());
+			node.setState(tbContentCategory.getIsParent() ? "closed" : "open");
+
+			resultList.add(node);
+		}
+		return resultList;
+	}
+
+}

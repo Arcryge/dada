@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;bzsp_ghy.jsp&apos; to &apos;sbsq&apos;&#x0D;&#x0A;- Original project: &apos;seftrain&apos;&#x0D;&#x0A;- Destination element: &apos;sbsq&apos;&#x0D;&#x0A;- Original element: &apos;bzsp_ghy.jsp&apos;" description="Copy file" element1="seftrain/seftrain/seftrain/ghy/sbsq/bzsp_ghy.jsp" files="1" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1556865256578" target="/seftrain/seftrain/seftrain/seftrain/ghy/sbsq" units="0" version="1.0"/>
+</session>

@@ -1,0 +1,21 @@
+/**
+ * @author Arcry
+ * @date 2019年5月20日
+ * @time 下午4:04:38
+ */
+package com.dada.rest.service.impl;
+
+import java.util.List;
+
+import com.dada.pojo.TbContent;
+import com.dada.rest.service.ContentService;
+
+public class ContentServiceImpl implements ContentService {
+
+	@Override
+	public List<TbContent> getContentList(long contentId) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

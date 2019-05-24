@@ -1,0 +1,608 @@
+/**
+ * @author Arcry
+ * @date 2019年5月24日
+ * @time 上午11:32:20
+ */
+package com.dada.rest.service.impl;
+
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
+
+import redis.clients.jedis.BinaryClient.LIST_POSITION;
+import redis.clients.jedis.RedisPipeline;
+import redis.clients.jedis.Response;
+import redis.clients.jedis.SortingParams;
+import redis.clients.jedis.Tuple;
+
+public class RedisServiceImpl implements RedisPipeline {
+
+	@Override
+	public Response<Long> append(String key, String value) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Response<List<String>> blpop(String arg) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Response<List<String>> brpop(String arg) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Response<Long> decr(String key) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Response<Long> decrBy(String key, long integer) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Response<Long> del(String key) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Response<String> echo(String string) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Response<Boolean> exists(String key) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Response<Long> expire(String key, int seconds) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Response<Long> pexpire(String key, long milliseconds) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Response<Long> expireAt(String key, long unixTime) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Response<Long> pexpireAt(String key, long millisecondsTimestamp) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Response<String> get(String key) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Response<Boolean> getbit(String key, long offset) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Response<String> getrange(String key, long startOffset, long endOffset) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Response<String> getSet(String key, String value) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Response<Long> hdel(String key, String... field) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Response<Boolean> hexists(String key, String field) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Response<String> hget(String key, String field) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Response<Map<String, String>> hgetAll(String key) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Response<Long> hincrBy(String key, String field, long value) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Response<Set<String>> hkeys(String key) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Response<Long> hlen(String key) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Response<List<String>> hmget(String key, String... fields) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Response<String> hmset(String key, Map<String, String> hash) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Response<Long> hset(String key, String field, String value) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Response<Long> hsetnx(String key, String field, String value) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Response<List<String>> hvals(String key) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Response<Long> incr(String key) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Response<Long> incrBy(String key, long integer) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Response<String> lindex(String key, long index) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Response<Long> linsert(String key, LIST_POSITION where, String pivot, String value) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Response<Long> llen(String key) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Response<String> lpop(String key) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Response<Long> lpush(String key, String... string) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Response<Long> lpushx(String key, String... string) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Response<List<String>> lrange(String key, long start, long end) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Response<Long> lrem(String key, long count, String value) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Response<String> lset(String key, long index, String value) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Response<String> ltrim(String key, long start, long end) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Response<Long> move(String key, int dbIndex) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Response<Long> persist(String key) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Response<String> rpop(String key) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Response<Long> rpush(String key, String... string) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Response<Long> rpushx(String key, String... string) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Response<Long> sadd(String key, String... member) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Response<Long> scard(String key) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Response<Boolean> sismember(String key, String member) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Response<String> set(String key, String value) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Response<Boolean> setbit(String key, long offset, boolean value) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Response<String> setex(String key, int seconds, String value) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Response<Long> setnx(String key, String value) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Response<Long> setrange(String key, long offset, String value) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Response<Set<String>> smembers(String key) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Response<List<String>> sort(String key) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Response<List<String>> sort(String key, SortingParams sortingParameters) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Response<String> spop(String key) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Response<Set<String>> spop(String key, long count) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Response<String> srandmember(String key) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Response<Long> srem(String key, String... member) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Response<Long> strlen(String key) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Response<String> substr(String key, int start, int end) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Response<Long> ttl(String key) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Response<String> type(String key) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Response<Long> zadd(String key, double score, String member) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Response<Long> zcard(String key) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Response<Long> zcount(String key, double min, double max) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Response<Double> zincrby(String key, double score, String member) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Response<Set<String>> zrange(String key, long start, long end) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Response<Set<String>> zrangeByScore(String key, double min, double max) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Response<Set<String>> zrangeByScore(String key, String min, String max) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Response<Set<String>> zrangeByScore(String key, double min, double max, int offset, int count) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Response<Set<Tuple>> zrangeByScoreWithScores(String key, double min, double max) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Response<Set<Tuple>> zrangeByScoreWithScores(String key, double min, double max, int offset, int count) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Response<Set<String>> zrevrangeByScore(String key, double max, double min) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Response<Set<String>> zrevrangeByScore(String key, String max, String min) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Response<Set<String>> zrevrangeByScore(String key, double max, double min, int offset, int count) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Response<Set<Tuple>> zrevrangeByScoreWithScores(String key, double max, double min) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Response<Set<Tuple>> zrevrangeByScoreWithScores(String key, double max, double min, int offset, int count) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Response<Set<Tuple>> zrangeWithScores(String key, long start, long end) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Response<Long> zrank(String key, String member) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Response<Long> zrem(String key, String... member) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Response<Long> zremrangeByRank(String key, long start, long end) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Response<Long> zremrangeByScore(String key, double start, double end) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Response<Set<String>> zrevrange(String key, long start, long end) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Response<Set<Tuple>> zrevrangeWithScores(String key, long start, long end) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Response<Long> zrevrank(String key, String member) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Response<Double> zscore(String key, String member) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Response<Long> zlexcount(String key, String min, String max) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Response<Set<String>> zrangeByLex(String key, String min, String max) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Response<Set<String>> zrangeByLex(String key, String min, String max, int offset, int count) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Response<Set<String>> zrevrangeByLex(String key, String max, String min) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Response<Set<String>> zrevrangeByLex(String key, String max, String min, int offset, int count) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Response<Long> zremrangeByLex(String key, String start, String end) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Response<Long> bitcount(String key) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Response<Long> bitcount(String key, long start, long end) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Response<Long> pfadd(String key, String... elements) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Response<Long> pfcount(String key) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

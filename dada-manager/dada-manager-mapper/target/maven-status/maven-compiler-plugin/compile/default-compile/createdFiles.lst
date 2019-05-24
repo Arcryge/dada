@@ -1,0 +1,11 @@
+com\dada\mapper\TbItemParamMapper.class
+com\dada\mapper\TbOrderShippingMapper.class
+com\dada\mapper\TbOrderItemMapper.class
+com\dada\mapper\TbItemParamItemMapper.class
+com\dada\mapper\TbContentCategoryMapper.class
+com\dada\mapper\TbItemDescMapper.class
+com\dada\mapper\TbItemCatMapper.class
+com\dada\mapper\TbContentMapper.class
+com\dada\mapper\TbUserMapper.class
+com\dada\mapper\TbItemMapper.class
+com\dada\mapper\TbOrderMapper.class
