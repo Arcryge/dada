@@ -8,3 +8,7 @@ access_log.*
 *.xmi
 *.tmp
 *.2019-05-24
+*.class
+/metatdata
+/target
+.classpath
