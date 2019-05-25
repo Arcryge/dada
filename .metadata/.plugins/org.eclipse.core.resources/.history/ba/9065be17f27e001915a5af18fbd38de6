@@ -1,0 +1,10 @@
+/**
+ * @author Arcry
+ * @date 2019年5月25日
+ * @time 下午9:35:36
+ */
+package com.dada.search.service;
+
+public interface SearchService {
+
+}
