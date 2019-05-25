@@ -1,0 +1,10 @@
+/**
+ * @author Arcry
+ * @date 2019年5月25日
+ * @time 下午2:55:02
+ */
+package com.dada.rest.solrJ;
+
+public class SolrJTest {
+
+}

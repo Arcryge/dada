@@ -6,11 +6,11 @@ access_log.*
 *.tmp
 *.2019-05-24
 *.class
-/.metatdata/
+/metatdata
 
-/.settings/  
-/target/ 
-.classpath
+/settings
+/target
+*.classpath
 
 bin/  
 gen/
