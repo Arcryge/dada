@@ -40,6 +40,7 @@ public class SolrJTest {
 		solrServer.commit();
 	}
 
+	
 	@Test
 	public void queryDocument() throws Exception {
 		SolrServer solrServer = new HttpSolrServer("http://192.168.86.130:8080/solr");
@@ -59,6 +60,7 @@ public class SolrJTest {
 			System.out.println(solrDocument.get("item_title"));
 			System.out.println(solrDocument.get("item_price"));
 			System.out.println(solrDocument.get("item_image"));
+			
 		}
 	}
 

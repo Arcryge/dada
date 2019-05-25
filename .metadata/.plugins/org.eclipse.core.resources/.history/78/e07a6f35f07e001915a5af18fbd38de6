@@ -1,0 +1,10 @@
+/**
+ * @author Arcry
+ * @date 2019年5月25日
+ * @time 下午9:22:17
+ */
+package com.dada.search.pojo;
+
+public class SearchResult {
+
+}
