@@ -1,0 +1,5 @@
+com\dada\search\service\impl\ItemServiceImpl.class
+com\dada\search\service\ItemService.class
+com\dada\search\mapper\ItemMapper.class
+com\dada\search\controller\ItemController.class
+com\dada\search\pojo\Item.class
