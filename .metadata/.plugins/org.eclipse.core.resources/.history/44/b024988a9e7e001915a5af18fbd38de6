@@ -57,6 +57,7 @@
 			<dependency>
 				<groupId>org.apache.solr</groupId>
 				<artifactId>solr-solrj</artifactId>
+				<version>${solrj.version}</version>
 			</dependency>
 	</dependencies>
 	<build>
