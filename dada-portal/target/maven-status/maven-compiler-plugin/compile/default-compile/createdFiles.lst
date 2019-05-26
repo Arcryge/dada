@@ -1,3 +1,8 @@
+com\dada\portal\service\impl\SearchServiceImpl.class
 com\dada\portal\service\impl\ContentServiceImpl.class
+com\dada\portal\controller\SearchController.class
 com\dada\portal\service\ContentService.class
+com\dada\portal\controller\pojo\SearchResult.class
+com\dada\portal\controller\pojo\Item.class
+com\dada\portal\service\SearchService.class
 com\dada\portal\controller\IndexController.class
