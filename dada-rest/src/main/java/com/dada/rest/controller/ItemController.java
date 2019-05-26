@@ -42,4 +42,11 @@ public class ItemController {
 		return result;
 	}
 
+	@RequestMapping("/param/{itemId}")
+	@ResponseBody
+	public DadaResult getItemParam(@PathVariable Long itemId) {
+		DadaResult result = itemService.getItemParam(itemId);
+		return result;
+	}
+
 }

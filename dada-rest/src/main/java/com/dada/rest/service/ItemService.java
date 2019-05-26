@@ -12,4 +12,6 @@ public interface ItemService {
 	DadaResult getItemBaseInfo(long itemId);
 
 	DadaResult getItemDesc(long itemId);
+
+	DadaResult getItemParam(long itemId);
 }
