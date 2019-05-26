@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <typeInfoHistroy>
-<typeInfo handle="=seftrain/C:\/DWDevEnvironment\/eclipse-oxygen\/eclipse-workspace\/seftrain\/seftrain\/WEB-INF\/lib\/sef_framework.jar&lt;com.dareway.framework.util(DataStore.class[DataStore" modifiers="33" timestamp="1555575864078"/>
 <typeInfo handle="=dada-manager-service/C:\/DWDevEnvironment\/Java\/jdk1.7.0_67_x64\/jre\/lib\/rt.jar&lt;java.awt.event(ItemListener.class[ItemListener" modifiers="1537" timestamp="1433990537369"/>
 <typeInfo handle="=dada-manager-service/src\/main\/java&lt;com.dada.service{ItemService.java[ItemService" modifiers="513" timestamp="1558249491341"/>
 <typeInfo handle="=dada-manager-service/src\/main\/java&lt;com.dada.service{ItemCatService.java[ItemCatService" modifiers="513" timestamp="1556778493572"/>
@@ -14,4 +13,7 @@
 <typeInfo handle="=dada-portal/src\/main\/java&lt;com.dada.portal.service{ContentService.java[ContentService" modifiers="513" timestamp="1558354183266"/>
 <typeInfo handle="=dada-rest/src\/main\/java&lt;com.dada.rest.dao{JedisClient.java[JedisClient" modifiers="513" timestamp="1558668853493"/>
 <typeInfo handle="=dada-rest/C:\/Users\/97912\/.m2\/repository\/redis\/clients\/jedis\/2.7.2\/jedis-2.7.2.jar&lt;redis.clients.jedis(RedisPipeline.class[RedisPipeline" modifiers="1537" timestamp="1437286372266"/>
+<typeInfo handle="=dada-search/src\/main\/java&lt;com.dada.search.service{ItemService.java[ItemService" modifiers="513" timestamp="1558770487201"/>
+<typeInfo handle="=dada-search/src\/main\/java&lt;com.dada.search.dao{SearchDao.java[SearchDao" modifiers="513" timestamp="1558790741457"/>
+<typeInfo handle="=dada-search/src\/main\/java&lt;com.dada.search.service{SearchService.java[SearchService" modifiers="513" timestamp="1558791385756"/>
 </typeInfoHistroy>

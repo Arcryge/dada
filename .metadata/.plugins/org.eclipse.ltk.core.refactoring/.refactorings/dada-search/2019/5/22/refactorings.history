@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 2 elements to &apos;dada-portal/src/main/java/com.dada.portal.controller.pojo&apos;&#x0D;&#x0A;- Original project: &apos;dada-search&apos;&#x0D;&#x0A;- Destination element: &apos;dada-portal/src/main/java/com.dada.portal.controller.pojo&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     com.dada.search.pojo.Item.java&#x0D;&#x0A;     com.dada.search.pojo.SearchResult.java" description="Copy compilation units" destination="=dada-portal/src\/main\/java&lt;com.dada.portal.controller.pojo" element1="/src\/main\/java&lt;com.dada.search.pojo{Item.java" element2="/src\/main\/java&lt;com.dada.search.pojo{SearchResult.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1558845697596" units="2" version="1.0"/>
+</session>

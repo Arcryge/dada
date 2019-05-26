@@ -6,18 +6,19 @@
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="getContentById" key="selection"/>
+		<item value="" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="dada-manager"/>
+			<item value="dada-rest"/>
 			<item value="getContentById"/>
 			<item value="mousemove"/>
 			<item value="move"/>
 			<item value="URL_Serv"/>
 			<item value="淘淘"/>
-			<item value="dada-manager"/>
 			<item value="initItemCat"/>
 			<item value="maven"/>
 			<item value="workflow"/>
@@ -26,9 +27,9 @@
 			<item value="workflowPan"/>
 			<item value="workflowPane"/>
 			<item value="workflowPanel"/>
-			<item value="workflowPanel.jsp"/>
 		</list>
 		<list key="replacehistory">
+			<item value="dada-search"/>
 			<item value="达达"/>
 			<item value="dada-portal"/>
 			<item value=""/>
