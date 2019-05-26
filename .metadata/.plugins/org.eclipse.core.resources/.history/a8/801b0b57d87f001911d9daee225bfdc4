@@ -13,6 +13,4 @@ public interface ItemService {
 
 	String getItemDescById(Long itemId);
 
-	String getItemParam(Long itemId);
-
 }
