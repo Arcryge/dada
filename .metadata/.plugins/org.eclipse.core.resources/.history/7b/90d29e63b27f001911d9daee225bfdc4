@@ -56,7 +56,7 @@ public class ItemServiceImpl implements ItemService {
 
 		//根据商品id查询商品信息
 		TbItem item = itemMapper.selectByPrimaryKey(itemId);
-		//使用DadaResult包装一下
+		//使用TaotaoResult包装一下
 		try {
 			//把商品信息写入缓存
 			jedisClient.set(REDIS_ITEM_KEY + ":" + itemId + ":base", JsonUtils.objectToJson(item));

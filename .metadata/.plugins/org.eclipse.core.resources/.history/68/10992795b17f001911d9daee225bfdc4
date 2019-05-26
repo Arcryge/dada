@@ -33,10 +33,10 @@ public class ItemServiceImpl implements ItemService {
 	private String REDIS_ITEM_KEY;
 	@Value("${REDIS_ITEM_EXPIRE}")
 	private Integer REDIS_ITEM_EXPIRE;
-
+	
 	@Autowired
 	private JedisClient jedisClient;
-
+	
 	@Override
 	public DadaResult getItemBaseInfo(long itemId) {
 		try {
@@ -49,14 +49,14 @@ public class ItemServiceImpl implements ItemService {
 				TbItem item = JsonUtils.jsonToPojo(json, TbItem.class);
 				return DadaResult.ok(item);
 			}
-
+			
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-
+		
 		//根据商品id查询商品信息
 		TbItem item = itemMapper.selectByPrimaryKey(itemId);
-		//使用DadaResult包装一下
+		//使用TaotaoResult包装一下
 		try {
 			//把商品信息写入缓存
 			jedisClient.set(REDIS_ITEM_KEY + ":" + itemId + ":base", JsonUtils.objectToJson(item));
