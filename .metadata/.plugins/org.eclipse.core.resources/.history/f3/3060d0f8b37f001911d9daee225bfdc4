@@ -35,11 +35,4 @@ public class ItemController {
 		return result;
 	}
 
-	@RequestMapping("/desc/{itemId}")
-	@ResponseBody
-	public DadaResult getItemDesc(@PathVariable Long itemId) {
-		DadaResult result = itemService.getItemDesc(itemId);
-		return result;
-	}
-
 }

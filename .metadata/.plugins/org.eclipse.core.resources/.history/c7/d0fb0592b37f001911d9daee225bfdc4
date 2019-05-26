@@ -71,7 +71,7 @@ public class ItemServiceImpl implements ItemService {
 		}
 		return DadaResult.ok(item);
 	}
-
+	
 	@Override
 	public DadaResult getItemDesc(long itemId) {
 		//添加缓存
@@ -90,7 +90,7 @@ public class ItemServiceImpl implements ItemService {
 		}
 		//创建查询条件
 		TbItemDesc itemDesc = itemDescMapper.selectByPrimaryKey(itemId);
-
+		
 		try {
 			//把商品信息写入缓存
 			jedisClient.set(REDIS_ITEM_KEY + ":" + itemId + ":desc", JsonUtils.objectToJson(itemDesc));
@@ -99,8 +99,9 @@ public class ItemServiceImpl implements ItemService {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-
+		
 		return DadaResult.ok(itemDesc);
 	}
+
 
 }
