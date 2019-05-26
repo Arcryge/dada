@@ -66,9 +66,9 @@ public class ItemServiceImpl implements ItemService {
 			//查询商品描述
 			String json = HttpClientUtil.doGet(REST_BASE_URL + ITEM_DESC_URL + itemId);
 			//转换成java对象
-			DadaResult dadaResult = DadaResult.formatToPojo(json, TbItemDesc.class);
-			if (dadaResult.getStatus() == 200) {
-				TbItemDesc itemDesc = (TbItemDesc) dadaResult.getData();
+			DadaResult taotaoResult = DadaResult.formatToPojo(json, TbItemDesc.class);
+			if (taotaoResult.getStatus() == 200) {
+				TbItemDesc itemDesc = (TbItemDesc) taotaoResult.getData();
 				//取商品描述信息
 				String result = itemDesc.getItemDesc();
 				return result;

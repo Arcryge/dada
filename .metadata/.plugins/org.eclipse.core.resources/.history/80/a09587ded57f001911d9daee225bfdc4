@@ -10,7 +10,7 @@ import com.dada.portal.pojo.ItemInfo;
 public interface ItemService {
 
 	ItemInfo getItemById(Long itemId);
-
+	
 	String getItemDescById(Long itemId);
 
 }
