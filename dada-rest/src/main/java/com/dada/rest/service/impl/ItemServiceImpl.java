@@ -46,6 +46,7 @@ public class ItemServiceImpl implements ItemService {
 
 	@Value("${REDIS_ITEM_KEY}")
 	private String REDIS_ITEM_KEY;
+
 	@Value("${REDIS_ITEM_EXPIRE}")
 	private Integer REDIS_ITEM_EXPIRE;
 

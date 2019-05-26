@@ -1,0 +1,19 @@
+/**
+ * @author Arcry
+ * @date 2019年5月26日
+ * @time 下午9:38:45
+ */
+package com.dada.portal.service.impl;
+
+import com.dada.pojo.TbItem;
+import com.dada.portal.service.ItemService;
+
+public class ItemServiceImpl implements ItemService {
+
+	@Override
+	public TbItem getItemById(Long itemId) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

@@ -13,7 +13,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
-import com.dada.portal.controller.pojo.SearchResult;
+import com.dada.portal.pojo.SearchResult;
 import com.dada.portal.service.SearchService;
 
 /**

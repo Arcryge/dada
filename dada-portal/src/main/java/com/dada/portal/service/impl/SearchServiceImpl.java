@@ -13,7 +13,7 @@ import org.springframework.stereotype.Service;
 
 import com.dada.common.pojo.DadaResult;
 import com.dada.common.utils.HttpClientUtil;
-import com.dada.portal.controller.pojo.SearchResult;
+import com.dada.portal.pojo.SearchResult;
 import com.dada.portal.service.SearchService;
 
 /**

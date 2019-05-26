@@ -5,7 +5,7 @@
  */
 package com.dada.portal.service;
 
-import com.dada.portal.controller.pojo.SearchResult;
+import com.dada.portal.pojo.SearchResult;
 
 public interface SearchService {
 
