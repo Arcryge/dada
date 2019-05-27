@@ -85,7 +85,6 @@ public class UserController {
 	 * @time 2019年5月27日 下午5:31:13
 	 */
 	@RequestMapping("/register")
-	@ResponseBody
 	public DadaResult createUser(TbUser user) {
 
 		try {

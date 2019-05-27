@@ -15,7 +15,6 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.dada.common.pojo.DadaResult;
 import com.dada.common.utils.ExceptionUtil;
-import com.dada.pojo.TbUser;
 import com.dada.sso.service.UserService;
 
 /**
@@ -72,27 +71,6 @@ public class UserController {
 			return mappingJacksonValue;
 		} else {
 			return result;
-		}
-	}
-
-	/**
-	 * 创建用户
-	 * @desc 
-	 * @author Arcry
-	 * @param user
-	 * @return
-	 * @return DadaResult
-	 * @time 2019年5月27日 下午5:31:13
-	 */
-	@RequestMapping("/register")
-	@ResponseBody
-	public DadaResult createUser(TbUser user) {
-
-		try {
-			DadaResult result = userService.createUser(user);
-			return result;
-		} catch (Exception e) {
-			return DadaResult.build(500, ExceptionUtil.getStackTrace(e));
 		}
 	}
 
