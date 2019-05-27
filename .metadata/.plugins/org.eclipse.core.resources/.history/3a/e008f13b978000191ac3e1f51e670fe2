@@ -97,7 +97,6 @@
 		
 	};
 	$(function(){
-		//当页面加载完成后绑定事件
 		$("#loginsubmit").click(function(){
 			LOGIN.login();
 		});
