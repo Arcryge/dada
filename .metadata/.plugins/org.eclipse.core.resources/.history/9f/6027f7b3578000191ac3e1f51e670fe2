@@ -6,12 +6,8 @@
 package com.dada.sso.service;
 
 import com.dada.common.pojo.DadaResult;
-import com.dada.pojo.TbUser;
 
 public interface UserService {
 
 	DadaResult checkData(String content, Integer type);
-
-	DadaResult createUser(TbUser user);
-
 }

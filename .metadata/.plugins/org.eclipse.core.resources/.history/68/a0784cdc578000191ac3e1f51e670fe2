@@ -5,12 +5,10 @@
  */
 package com.dada.sso.service.impl;
 
-import java.util.Date;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import org.springframework.util.DigestUtils;
 
 import com.dada.common.pojo.DadaResult;
 import com.dada.mapper.TbUserMapper;
@@ -54,17 +52,6 @@ public class UserServiceImpl implements UserService {
 			return DadaResult.ok(true);
 		}
 		return DadaResult.ok(false);
-	}
-
-	@Override
-	public DadaResult createUser(TbUser user) {
-		user.setUpdated(new Date());
-		user.setCreated(new Date());
-		//md5加密
-		user.setPassword(DigestUtils.md5DigestAsHex(user.getPassword().getBytes()));
-		userMapper.insert(user);
-		return DadaResult.ok();
-
 	}
 
 }
