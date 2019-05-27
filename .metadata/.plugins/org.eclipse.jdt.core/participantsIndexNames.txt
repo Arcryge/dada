@@ -1,3 +1,9 @@
 INDEX VERSION 1.130
+C:\DWDevEnvironment\eclipse-oxygen\eclipse-workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1929863103.index
+\dada-manager-web\src\main\java
 C:\DWDevEnvironment\eclipse-oxygen\eclipse-workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1809430002.index
+\dada-portal\src\main\java
+C:\DWDevEnvironment\eclipse-oxygen\eclipse-workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3918584844.index
+\dada-portal\src\main\java
+C:\DWDevEnvironment\eclipse-oxygen\eclipse-workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3469922279.index
 \dada-portal\src\main\java
