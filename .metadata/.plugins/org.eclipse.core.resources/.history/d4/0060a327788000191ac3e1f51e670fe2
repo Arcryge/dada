@@ -42,9 +42,6 @@ public class UserServiceImpl implements UserService {
 	@Value("${REDIS_USER_SESSION_KEY}")
 	private String REDIS_USER_SESSION_KEY;
 
-	@Value("${SSO_SESSION_EXPIRE}")
-	private Integer SSO_SESSION_EXPIRE;
-
 	@Override
 	public DadaResult checkData(String content, Integer type) {
 		//创建查询条件

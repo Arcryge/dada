@@ -13,7 +13,7 @@ public interface UserService {
 	DadaResult checkData(String content, Integer type);
 
 	DadaResult createUser(TbUser user);
-
-	DadaResult userLogin(String username, String password);
+	
+	DadaResult userLogin(String username,String password);
 
 }

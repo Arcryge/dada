@@ -43,7 +43,7 @@ public class UserServiceImpl implements UserService {
 	private String REDIS_USER_SESSION_KEY;
 
 	@Value("${SSO_SESSION_EXPIRE}")
-	private Integer SSO_SESSION_EXPIRE;
+	private String SSO_SESSION_EXPIRE;
 
 	@Override
 	public DadaResult checkData(String content, Integer type) {

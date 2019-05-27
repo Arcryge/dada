@@ -10,7 +10,6 @@ import java.util.List;
 import java.util.UUID;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 import org.springframework.util.DigestUtils;
 
@@ -20,7 +19,6 @@ import com.dada.mapper.TbUserMapper;
 import com.dada.pojo.TbUser;
 import com.dada.pojo.TbUserExample;
 import com.dada.pojo.TbUserExample.Criteria;
-import com.dada.sso.dao.JedisClient;
 import com.dada.sso.service.UserService;
 
 /**
@@ -35,15 +33,6 @@ public class UserServiceImpl implements UserService {
 
 	@Autowired
 	private TbUserMapper userMapper;
-
-	@Autowired
-	private JedisClient jedisClient;
-
-	@Value("${REDIS_USER_SESSION_KEY}")
-	private String REDIS_USER_SESSION_KEY;
-
-	@Value("${SSO_SESSION_EXPIRE}")
-	private Integer SSO_SESSION_EXPIRE;
 
 	@Override
 	public DadaResult checkData(String content, Integer type) {
@@ -109,7 +98,7 @@ public class UserServiceImpl implements UserService {
 		String token = UUID.randomUUID().toString();
 		//保存用户之前，把用户对象中的密码清空。
 		user.setPassword(null);
-		//把用户信息写入redis,user序列化
+		//把用户信息写入redis
 		jedisClient.set(REDIS_USER_SESSION_KEY + ":" + token, JsonUtils.objectToJson(user));
 		//设置session的过期时间
 		jedisClient.expire(REDIS_USER_SESSION_KEY + ":" + token, SSO_SESSION_EXPIRE);
