@@ -1,6 +1,7 @@
 C:\DWDevEnvironment\eclipse-oxygen\eclipse-workspace\dada-sso\src\main\java\com\dada\sso\service\impl\UserServiceImpl.java
 C:\DWDevEnvironment\eclipse-oxygen\eclipse-workspace\dada-sso\src\main\java\com\dada\sso\dao\impl\JedisClientCluster.java
 C:\DWDevEnvironment\eclipse-oxygen\eclipse-workspace\dada-sso\src\main\java\com\dada\sso\dao\JedisClient.java
+C:\DWDevEnvironment\eclipse-oxygen\eclipse-workspace\dada-sso\src\main\java\com\dada\sso\controller\PageController.java
 C:\DWDevEnvironment\eclipse-oxygen\eclipse-workspace\dada-sso\src\main\java\com\dada\sso\controller\UserController.java
 C:\DWDevEnvironment\eclipse-oxygen\eclipse-workspace\dada-sso\src\main\java\com\dada\sso\dao\impl\JedisClientSingle.java
 C:\DWDevEnvironment\eclipse-oxygen\eclipse-workspace\dada-sso\src\main\java\com\dada\sso\service\UserService.java

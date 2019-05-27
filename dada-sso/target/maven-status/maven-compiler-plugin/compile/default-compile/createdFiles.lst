@@ -2,5 +2,6 @@ com\dada\sso\dao\impl\JedisClientCluster.class
 com\dada\sso\dao\JedisClient.class
 com\dada\sso\controller\UserController.class
 com\dada\sso\service\UserService.class
+com\dada\sso\controller\PageController.class
 com\dada\sso\service\impl\UserServiceImpl.class
 com\dada\sso\dao\impl\JedisClientSingle.class
