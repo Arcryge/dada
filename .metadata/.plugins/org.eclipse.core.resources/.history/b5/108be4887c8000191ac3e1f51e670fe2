@@ -16,6 +16,4 @@ public interface UserService {
 
 	DadaResult userLogin(String username, String password);
 
-	DadaResult getUserByToken(String token);
-
 }

@@ -9,7 +9,6 @@ import java.util.Date;
 import java.util.List;
 import java.util.UUID;
 
-import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
@@ -112,26 +111,10 @@ public class UserServiceImpl implements UserService {
 		user.setPassword(null);
 		//把用户信息写入redis,user序列化
 		jedisClient.set(REDIS_USER_SESSION_KEY + ":" + token, JsonUtils.objectToJson(user));
-		//设置session的过期时间 
+		//设置session的过期时间
 		jedisClient.expire(REDIS_USER_SESSION_KEY + ":" + token, SSO_SESSION_EXPIRE);
 		//返回token
 		return DadaResult.ok(token);
-
-	}
-
-	@Override
-	public DadaResult getUserByToken(String token) {
-
-		//根据token从redis中查询用户信息
-		String json = jedisClient.get(REDIS_USER_SESSION_KEY + ":" + token);
-		//判断是否为空
-		if (StringUtils.isBlank(json)) {
-			return DadaResult.build(400, "此session已经过期，请重新登录");
-		}
-		//更新过期时间
-		jedisClient.expire(REDIS_USER_SESSION_KEY + ":" + token, SSO_SESSION_EXPIRE);
-		//返回用户信息
-		return DadaResult.ok(JsonUtils.jsonToPojo(json, TbUser.class));
 
 	}
 

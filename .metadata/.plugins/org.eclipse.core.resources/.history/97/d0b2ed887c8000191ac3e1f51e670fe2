@@ -15,7 +15,7 @@ public interface UserService {
 	DadaResult createUser(TbUser user);
 
 	DadaResult userLogin(String username, String password);
-
-	DadaResult getUserByToken(String token);
+	
+	
 
 }
