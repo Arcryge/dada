@@ -6,7 +6,7 @@
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="" key="selection"/>
+		<item value="dada-sso" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
@@ -29,6 +29,7 @@
 			<item value="workflowPanel"/>
 		</list>
 		<list key="replacehistory">
+			<item value="dada-sso"/>
 			<item value="dada-search"/>
 			<item value="达达"/>
 			<item value="dada-portal"/>
