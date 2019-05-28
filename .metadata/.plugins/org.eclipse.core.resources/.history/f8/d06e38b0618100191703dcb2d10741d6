@@ -1,0 +1,24 @@
+/**
+ * @author Arcry
+ * @date 2019年5月28日
+ * @time 下午11:59:11
+ */
+package com.dada.order.service.impl;
+
+import java.util.List;
+
+import com.dada.common.pojo.DadaResult;
+import com.dada.order.service.OrderService;
+import com.dada.pojo.TbOrder;
+import com.dada.pojo.TbOrderItem;
+import com.dada.pojo.TbOrderShipping;
+
+public class OrderServiceImpl implements OrderService {
+
+	@Override
+	public DadaResult createOrder(TbOrder order, List<TbOrderItem> itemList, TbOrderShipping orderShipping) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

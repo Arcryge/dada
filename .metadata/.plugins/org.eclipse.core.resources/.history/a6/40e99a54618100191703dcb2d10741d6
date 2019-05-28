@@ -1,0 +1,10 @@
+/**
+ * @author Arcry
+ * @date 2019年5月28日
+ * @time 下午11:56:24
+ */
+package com.dada.order.service;
+
+public interface OrderService {
+
+}
