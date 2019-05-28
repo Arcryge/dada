@@ -19,5 +19,5 @@ public interface CartService {
 
 	List<CartItem> getCartItemList(HttpServletRequest request, HttpServletResponse response);
 
-	DadaResult deleteCartItem(long itemId, HttpServletRequest request, HttpServletResponse response);
+	DadaResult deleteCartItem(long itemId);
 }

@@ -136,11 +136,13 @@ public class CartServiceImpl implements CartService {
 				itemList.remove(cartItem);
 				break;
 			}
+
 		}
 		//把购物车列表重新写入cookie
-		CookieUtils.setCookie(request, response, "DD_CART", JsonUtils.objectToJson(itemList), true);
+		CookieUtils.setCookie(request, response, "TT_CART", JsonUtils.objectToJson(itemList), true);
 
 		return DadaResult.ok();
+
 	}
 
 }

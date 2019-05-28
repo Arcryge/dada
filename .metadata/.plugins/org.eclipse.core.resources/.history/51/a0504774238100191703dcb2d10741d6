@@ -127,7 +127,7 @@ public class CartServiceImpl implements CartService {
 	 * @time 2019年5月28日 下午4:33:43
 	 */
 	@Override
-	public DadaResult deleteCartItem(long itemId, HttpServletRequest request, HttpServletResponse response) {
+	public DadaResult deleteCartItem(long itemId) {
 		//从cookie中取购物车商品列表
 		List<CartItem> itemList = getCartItemList(request);
 		//从列表中找到此商品
@@ -136,11 +136,13 @@ public class CartServiceImpl implements CartService {
 				itemList.remove(cartItem);
 				break;
 			}
+
 		}
 		//把购物车列表重新写入cookie
-		CookieUtils.setCookie(request, response, "DD_CART", JsonUtils.objectToJson(itemList), true);
+		CookieUtils.setCookie(request, response, "TT_CART", JsonUtils.objectToJson(itemList), true);
 
-		return DadaResult.ok();
+		return TaotaoResult.ok();
+
 	}
 
 }

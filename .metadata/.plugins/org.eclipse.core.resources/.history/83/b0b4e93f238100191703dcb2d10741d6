@@ -18,6 +18,4 @@ public interface CartService {
 	DadaResult addCartItem(long itemId, int num, HttpServletRequest request, HttpServletResponse response);
 
 	List<CartItem> getCartItemList(HttpServletRequest request, HttpServletResponse response);
-
-	DadaResult deleteCartItem(long itemId, HttpServletRequest request, HttpServletResponse response);
 }
