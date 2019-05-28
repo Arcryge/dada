@@ -39,11 +39,11 @@ public class CartController {
 	public String addCartItem(@PathVariable Long itemId, @RequestParam(defaultValue = "1") Integer num,
 			HttpServletRequest request, HttpServletResponse response) {
 		DadaResult result = cartService.addCartItem(itemId, num, request, response);
-		return "redirect:/cart/success.html";
+		return "redirect:cartSuccess.html";
 	}
-
+	
 	@RequestMapping("/success")
-	public String showSuccess() {
+	public showSuccess() {
 		return "cartSuccess";
 	}
 
