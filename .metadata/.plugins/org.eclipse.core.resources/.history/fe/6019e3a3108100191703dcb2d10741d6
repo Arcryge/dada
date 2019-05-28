@@ -1,0 +1,16 @@
+/**
+ * @author Arcry
+ * @date 2019年5月28日
+ * @time 下午2:19:25
+ */
+package com.dada.portal.pojo;
+
+public class CartItem {
+
+	private long id;
+	private String title;
+	private Integer num;
+	private long price;
+	private String image;
+
+}
