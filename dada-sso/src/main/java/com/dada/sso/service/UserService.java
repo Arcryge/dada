@@ -5,6 +5,9 @@
  */
 package com.dada.sso.service;
 
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
 import com.dada.common.pojo.DadaResult;
 import com.dada.pojo.TbUser;
 
@@ -14,7 +17,7 @@ public interface UserService {
 
 	DadaResult createUser(TbUser user);
 
-	DadaResult userLogin(String username, String password);
+	DadaResult userLogin(String username, String password, HttpServletRequest request, HttpServletResponse response);
 
 	DadaResult getUserByToken(String token);
 

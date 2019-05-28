@@ -1,8 +1,9 @@
 C:\DWDevEnvironment\eclipse-oxygen\eclipse-workspace\dada-common\src\main\java\com\dada\common\utils\JsonUtils.java
 C:\DWDevEnvironment\eclipse-oxygen\eclipse-workspace\dada-common\src\main\java\com\dada\common\utils\IDUtils.java
-C:\DWDevEnvironment\eclipse-oxygen\eclipse-workspace\dada-common\src\main\java\com\dada\common\utils\HttpClientUtil.java
-C:\DWDevEnvironment\eclipse-oxygen\eclipse-workspace\dada-common\src\main\java\com\dada\common\utils\ExceptionUtil.java
 C:\DWDevEnvironment\eclipse-oxygen\eclipse-workspace\dada-common\src\main\java\com\dada\common\pojo\EUTreeNode.java
+C:\DWDevEnvironment\eclipse-oxygen\eclipse-workspace\dada-common\src\main\java\com\dada\common\utils\ExceptionUtil.java
+C:\DWDevEnvironment\eclipse-oxygen\eclipse-workspace\dada-common\src\main\java\com\dada\common\utils\HttpClientUtil.java
+C:\DWDevEnvironment\eclipse-oxygen\eclipse-workspace\dada-common\src\main\java\com\dada\common\utils\CookieUtils.java
 C:\DWDevEnvironment\eclipse-oxygen\eclipse-workspace\dada-common\src\main\java\com\dada\common\pojo\DadaResult.java
 C:\DWDevEnvironment\eclipse-oxygen\eclipse-workspace\dada-common\src\main\java\com\dada\common\pojo\EUDataGridResult.java
 C:\DWDevEnvironment\eclipse-oxygen\eclipse-workspace\dada-common\src\main\java\com\dada\common\utils\FtpUtil.java
