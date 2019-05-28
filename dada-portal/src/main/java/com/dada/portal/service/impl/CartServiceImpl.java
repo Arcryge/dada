@@ -34,8 +34,8 @@ public class CartServiceImpl implements CartService {
 
 	@Value("${REST_BASE_URL}")
 	private String REST_BASE_URL;
-	@Value("${ITME_INFO_URL}")
-	private String ITME_INFO_URL;
+	@Value("${ITEM_INFO_URL}")
+	private String ITEM_INFO_URL;
 
 	/**
 	 * 添加购物车商品
@@ -67,7 +67,7 @@ public class CartServiceImpl implements CartService {
 		if (cartItem == null) {
 			cartItem = new CartItem();
 			//根据商品id查询商品基本信息。
-			String json = HttpClientUtil.doGet(REST_BASE_URL + ITME_INFO_URL + itemId);
+			String json = HttpClientUtil.doGet(REST_BASE_URL + ITEM_INFO_URL + itemId);
 			//把json转换成java对象
 			DadaResult dadaResult = DadaResult.formatToPojo(json, TbItem.class);
 			if (dadaResult.getStatus() == 200) {

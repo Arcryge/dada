@@ -1,0 +1,31 @@
+/**
+ * @author Arcry
+ * @date 2019年5月28日
+ * @time 下午2:42:20
+ */
+package com.dada.portal.controller;
+
+/**
+ * 购物车controller
+ *  
+ * @author Arcry
+ * @version 0.1
+ * @date 2019年5月28日 下午2:42:26
+ */
+@Controller
+@RequestMapping("/cart")
+public class CartController {
+
+	@Autowired
+	private CartService cartService;
+	
+	@RequestMapping("/add/{itemId}")
+	public String addCartItem(@PathVariable Long itemId, 
+			@RequestParam(defaultValue="1")Integer num, 
+			HttpServletRequest request, HttpServletResponse response) {
+		TaotaoResult result = cartService.addCartItem(itemId, num, request, response);
+		return "cartSuccess";
+	}
+	
+}
+
