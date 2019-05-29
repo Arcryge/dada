@@ -1,0 +1,25 @@
+/**
+ * @author Arcry
+ * @date 2019年5月29日
+ * @time 上午9:00:28
+ */
+package com.dada.order.controller;
+
+@Controller
+public class OrderController {
+
+	@Autowired
+	private OrderService orderService;
+	
+	@RequestMapping("/create")
+	@ResponseBody
+	public TaotaoResult createOrder(@RequestBody Order order) {
+		try {
+			TaotaoResult result = orderService.createOrder(order, order.getOrderItems(), order.getOrderShipping());
+			return result;
+		} catch (Exception e) {
+			e.printStackTrace();
+			return TaotaoResult.build(500, ExceptionUtil.getStackTrace(e));
+		}
+	}
+}
