@@ -6,7 +6,7 @@
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="dada-sso" key="selection"/>
+		<item value="dada-order" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
@@ -14,21 +14,15 @@
 		<list key="findhistory">
 			<item value="dada-manager"/>
 			<item value="dada-rest"/>
-			<item value="getContentById"/>
-			<item value="mousemove"/>
-			<item value="move"/>
-			<item value="URL_Serv"/>
-			<item value="淘淘"/>
-			<item value="initItemCat"/>
-			<item value="maven"/>
-			<item value="workflow"/>
-			<item value="workflowP"/>
-			<item value="workflowPa"/>
-			<item value="workflowPan"/>
-			<item value="workflowPane"/>
-			<item value="workflowPanel"/>
+			<item value="quantity-text"/>
+			<item value="changeQuantity-11345721-1-1-0"/>
+			<item value="+"/>
+			<item value="decrement"/>
+			<item value="ITEM_INFO_URL"/>
+			<item value="ITME_INFO_URL"/>
 		</list>
 		<list key="replacehistory">
+			<item value="dada-order"/>
 			<item value="dada-sso"/>
 			<item value="dada-search"/>
 			<item value="达达"/>

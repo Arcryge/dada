@@ -7,8 +7,9 @@
 		<list key="name">
 		</list>
 		<list key="artifactId">
-			<item value="dada-sso"/>
+			<item value="dada-order"/>
 			<item value="dada-parent"/>
+			<item value="dada-sso"/>
 			<item value="dada-search"/>
 			<item value="dada-portal"/>
 			<item value="dada-rest"/>
