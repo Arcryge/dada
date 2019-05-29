@@ -43,13 +43,10 @@ public class OrderController {
 	}
 
 	@RequestMapping("/create")
-	public String createOrder(Order order, Model model, HttpServletRequest request) {
+	public String createOrder(Order order, Model model,HttpServletRequest request) {
 		try {
 			//从Request中取用户信息
-			TbUser user = (TbUser) request.getAttribute("user");
-			//在order对象中补全用户信息
-			order.setUserId(user.getId());
-			order.setBuyerNick(user.getUsername());
+			TbUser user = request.getAttribute("user");
 			String orderId = orderService.createOrder(order);
 			model.addAttribute("orderId", orderId);
 			model.addAttribute("payment", order.getPayment());
