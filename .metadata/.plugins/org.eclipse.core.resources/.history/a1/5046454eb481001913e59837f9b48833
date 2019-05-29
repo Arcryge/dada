@@ -1,0 +1,28 @@
+/**
+ * @author Arcry
+ * @date 2019年5月29日
+ * @time 上午9:42:51
+ */
+package com.dada.portal.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import com.dada.portal.service.CartService;
+
+@Controller
+@RequestMapping("/order")
+public class OrderController {
+	
+	@Autowired
+	private CartService cartService;
+
+	@RequestMapping("/order-cart")
+	public String showOrderCart() {
+		//取购物车商品列表
+		
+		return "order-cart";
+	}
+}
+

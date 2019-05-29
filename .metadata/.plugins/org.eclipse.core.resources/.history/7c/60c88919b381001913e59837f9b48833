@@ -1,0 +1,17 @@
+/**
+ * @author Arcry
+ * @date 2019年5月29日
+ * @time 上午9:42:51
+ */
+package com.dada.portal.controller;
+
+@Controller
+@RequestMapping("/order")
+public class OrderController {
+
+	@RequestMapping("/order-cart")
+	public String showOrderCart() {
+		return "order-cart";
+	}
+}
+

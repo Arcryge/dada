@@ -112,6 +112,15 @@ public class CartServiceImpl implements CartService {
 		return new ArrayList<>();
 	}
 
+	/**
+	 * 取商品列表
+	 * @desc
+	 * @author Arcry
+	 * @param request
+	 * @param response
+	 * @return
+	 * @time 2019年5月29日 上午9:49:43
+	 */
 	@Override
 	public List<CartItem> getCartItemList(HttpServletRequest request, HttpServletResponse response) {
 		List<CartItem> itemList = getCartItemList(request);
