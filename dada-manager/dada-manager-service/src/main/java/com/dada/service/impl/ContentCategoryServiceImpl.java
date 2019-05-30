@@ -90,5 +90,86 @@ public class ContentCategoryServiceImpl implements ContentCategoryService {
 		return DadaResult.ok(contentCategory);
 	}
 
+	@Override
+	public DadaResult updateContentCategory(Long id, String name) {
+		TbContentCategory tbContentCategory = contentCategoryMapper.selectByPrimaryKey(id);
+        if(tbContentCategory != null){
+            tbContentCategory.setName(name);
+            try {
+            	contentCategoryMapper.updateByPrimaryKey(tbContentCategory);
+                return DadaResult.ok();
+            }catch (Exception e){
+                e.printStackTrace();
+				this.getReturnResult(500, "后台报错：数据库操作异常!", null);
+            }
+        }
+		return this.getReturnResult(500, "后台报错：空指针异常!", null);
+	}
+
+	@Override
+	public DadaResult deleteContentCategory(Long id) {
+		try {
+			TbContentCategory tbContentCategory = contentCategoryMapper.selectByPrimaryKey(id);
+			if (tbContentCategory != null) {
+				//删除当前节点
+				contentCategoryMapper.deleteByPrimaryKey(id);
+				//递归删除子节点
+				this.recursiveDeleteCategory(id);
+				//判断父节点状态，修改父节点状态
+				this.updateParentNodeStatus(tbContentCategory.getParentId());
+			}
+		} catch (Exception e) {
+			return this.getReturnResult(500, "后台报错：数据库操作异常！", null);
+		}
+		return DadaResult.ok();
+	}
+
+	private void updateParentNodeStatus(Long parentId) {
+		//查询父id是否还有子节点
+		TbContentCategoryExample example = new TbContentCategoryExample();
+		TbContentCategoryExample.Criteria criteria = example.createCriteria();
+		criteria.andParentIdEqualTo(parentId);
+		List<TbContentCategory> list = contentCategoryMapper.selectByExample(example);
+		if (list.size() == 0) {
+			//修改父节点状态为叶子节点（因为删除此节点后，父节点再无子节点）
+			TbContentCategory parent = contentCategoryMapper.selectByPrimaryKey(parentId);
+			if (parent.getIsParent()) {
+				parent.setIsParent(false);
+				//修改父节点状态
+				this.updateParentStatus(parent);
+			}
+		}
+	}
+
+	private void recursiveDeleteCategory(Long parentId) {
+		TbContentCategoryExample example = new TbContentCategoryExample();
+		TbContentCategoryExample.Criteria criteria = example.createCriteria();
+		criteria.andParentIdEqualTo(parentId);
+		try {
+			List<TbContentCategory> list = contentCategoryMapper.selectByExample(example);
+			for (TbContentCategory contentCategory : list) {
+				if (contentCategory.getIsParent()) {
+					contentCategoryMapper.deleteByPrimaryKey(contentCategory.getId());
+					//递归循坏
+					this.recursiveDeleteCategory(contentCategory.getId());
+				} else {
+					//删除
+					contentCategoryMapper.deleteByPrimaryKey(contentCategory.getId());
+				}
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
+	}
+
+	private DadaResult getReturnResult(Integer status, String msg, Object obj) {
+		DadaResult result = new DadaResult(status, msg, obj);
+		return result;
+	}
+
+	private void updateParentStatus(TbContentCategory parent) {
+		contentCategoryMapper.updateByPrimaryKey(parent);
+	}
 
 }

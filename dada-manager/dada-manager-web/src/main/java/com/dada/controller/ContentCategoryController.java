@@ -45,4 +45,29 @@ public class ContentCategoryController {
 		return result;
 	}
 
+	/**
+	 * 内容分类节点更新
+	 * @param id
+	 * @param name
+	 * @return
+	 */
+	@RequestMapping("/update")
+	@ResponseBody
+	public DadaResult updateContentCategory(Long id, String name) {
+		DadaResult result = contentCategoryService.updateContentCategory(id, name);
+		return result;
+	}
+
+	/**
+	 * 内容分类节点删除
+	 * @param id
+	 * @return
+	 */
+	@RequestMapping("/delete/")
+	@ResponseBody
+	public DadaResult deleteContentCategory(Long id) {
+		DadaResult result = contentCategoryService.deleteContentCategory(id);
+		return result;
+	}
+
 }

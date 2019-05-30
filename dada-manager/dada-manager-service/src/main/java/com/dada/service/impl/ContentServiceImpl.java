@@ -90,4 +90,31 @@ public class ContentServiceImpl implements ContentService {
 		return result;
 	}
 
+	@Override
+	public DadaResult updateContent(TbContent content) {
+		//填充属性
+		content.setUpdated(new Date());
+		//更新内容
+		contentMapper.updateByPrimaryKey(content);
+		//返回结果
+		return DadaResult.ok();
+	}
+
+	@Override
+	public DadaResult deleteContent(String ids) {
+		String[] idArr = ids.split(",");
+		for (String id : idArr) {
+			//删除内容
+			contentMapper.deleteByPrimaryKey(Long.valueOf(id));
+		}
+		//返回结果
+		return DadaResult.ok();
+	}
+
+	@Override
+	public DadaResult getContent(long id) {
+		TbContent content = contentMapper.selectByPrimaryKey(id);
+		return DadaResult.ok(content);
+	}
+
 }

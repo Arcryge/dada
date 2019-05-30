@@ -16,4 +16,10 @@ public interface ContentService {
 	TbContent getContentById(long contentId);
 
 	EUDataGridResult getContentList(int page, int rows);
+
+	DadaResult updateContent(TbContent content);
+
+	DadaResult deleteContent(String ids);
+
+	DadaResult getContent(long id);
 }

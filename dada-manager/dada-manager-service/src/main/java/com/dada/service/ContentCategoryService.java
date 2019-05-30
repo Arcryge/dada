@@ -15,4 +15,8 @@ public interface ContentCategoryService {
 	List<EUTreeNode> getCategoryList(long parentId);
 
 	DadaResult insertContentCategory(long parentId, String name);
+
+	DadaResult updateContentCategory(Long id, String name);
+
+	DadaResult deleteContentCategory(Long id);
 }

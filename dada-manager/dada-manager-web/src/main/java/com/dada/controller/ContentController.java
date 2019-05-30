@@ -50,4 +50,25 @@ public class ContentController {
 		DadaResult result = contentService.insertContent(content);
 		return result;
 	}
+
+	@RequestMapping("/rest/content/edit")
+	@ResponseBody
+	public DadaResult updateContent(TbContent content) {
+		DadaResult result = contentService.updateContent(content);
+		return result;
+	}
+
+	@RequestMapping("/content/delete")
+	@ResponseBody
+	public DadaResult deleteContent(String ids) {
+		DadaResult result = contentService.deleteContent(ids);
+		return result;
+	}
+
+	@RequestMapping("/content/getContent")
+	@ResponseBody
+	public DadaResult getContent(Long id) {
+		DadaResult result = contentService.getContent(id);
+		return result;
+	}
 }
