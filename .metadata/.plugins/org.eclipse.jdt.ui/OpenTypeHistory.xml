@@ -21,4 +21,6 @@
 <typeInfo handle="=dada-portal/src\/main\/java&lt;com.dada.portal.service{UserService.java[UserService" modifiers="513" timestamp="1559011405215"/>
 <typeInfo handle="=dada-portal/src\/main\/java&lt;com.dada.portal.service{CartService.java[CartService" modifiers="513" timestamp="1559032479368"/>
 <typeInfo handle="=dada-order/src\/main\/java&lt;com.dada.order.service{OrderService.java[OrderService" modifiers="513" timestamp="1559059111920"/>
+<typeInfo handle="=dada-manager-mapper/src\/main\/java&lt;com.dada.mapper{TbOrderItemMapper.java[TbOrderItemMapper" modifiers="513" timestamp="1555683941101"/>
+<typeInfo handle="=dada-portal/src\/main\/java&lt;com.dada.portal.service{OrderService.java[OrderService" modifiers="513" timestamp="1559095913541"/>
 </typeInfoHistroy>

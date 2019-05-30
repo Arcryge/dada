@@ -154,7 +154,6 @@ public class ItemServiceImpl implements ItemService {
 		itemParamItemMapper.insert(itemParamItem);
 
 		return DadaResult.ok();
-
 	}
 
 }

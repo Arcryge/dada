@@ -50,6 +50,12 @@ public class ItemController {
 		return result;
 	}
 
+	@RequestMapping(value = "/item/update", method = RequestMethod.POST)
+	@ResponseBody
+	private DadaResult updateItem(TbItem item, String desc, String itemParams) throws Exception {
+		DadaResult result = itemService.createItem(item, desc, itemParams);
+		return result;
+	}
 }
 
 
