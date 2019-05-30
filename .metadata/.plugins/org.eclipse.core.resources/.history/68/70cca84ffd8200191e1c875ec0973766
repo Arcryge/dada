@@ -1,0 +1,10 @@
+package com.dada.mapper;
+
+import java.util.List;
+
+import com.dada.pojo.TBItemParamExtend;
+
+public interface TbItemParamExtendMapper {
+
+	List<TBItemParamExtend> selectItemParamExtendList();
+}

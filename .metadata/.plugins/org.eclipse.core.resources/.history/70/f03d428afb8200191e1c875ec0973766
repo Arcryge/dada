@@ -1,0 +1,16 @@
+package com.dada.mapper;
+
+import java.util.List;
+
+import com.dada.pojo.TbItemParam;
+import com.dada.pojo.TbItemParamExample;
+
+public interface TbItemParamExtendMapper {
+
+    List<TbItemParam> selectByExampleWithBLOBs(TbItemParamExample example);
+
+    List<TbItemParam> selectByExample(TbItemParamExample example);
+
+    TbItemParam selectByPrimaryKey(Long id);
+
+}

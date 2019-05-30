@@ -31,6 +31,7 @@ com\dada\pojo\TbOrderExample$Criteria.class
 com\dada\pojo\TbOrderShippingExample$GeneratedCriteria.class
 com\dada\pojo\TbUserExample$GeneratedCriteria.class
 com\dada\pojo\TbItemDescExample$GeneratedCriteria.class
+com\dada\pojo\TbItemParamExtend.class
 com\dada\pojo\TbItemCat.class
 com\dada\pojo\TbOrderExample$GeneratedCriteria.class
 com\dada\pojo\TbOrderShipping.class

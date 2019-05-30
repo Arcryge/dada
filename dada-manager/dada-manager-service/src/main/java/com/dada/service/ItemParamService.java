@@ -6,6 +6,7 @@
 package com.dada.service;
 
 import com.dada.common.pojo.DadaResult;
+import com.dada.common.pojo.EUDataGridResult;
 import com.dada.pojo.TbItemParam;
 
 public interface ItemParamService {
@@ -13,4 +14,8 @@ public interface ItemParamService {
 	DadaResult getItemParamByCid(long cid);
 
 	DadaResult insertItemParam(TbItemParam itemParam);
+
+	EUDataGridResult getItemParamList(int page, int rows);
+
+	DadaResult deleteItemParam(long itemParamId);
 }

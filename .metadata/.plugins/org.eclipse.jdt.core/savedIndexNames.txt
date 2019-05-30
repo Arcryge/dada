@@ -11,7 +11,6 @@ INDEX VERSION 1.130+C:\DWDevEnvironment\eclipse-oxygen\eclipse-workspace\.metada
 1545778175.index
 537665046.index
 246994355.index
-2112693246.index
 3644306013.index
 1865989732.index
 2504278420.index

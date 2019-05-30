@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.dada.common.pojo.DadaResult;
+import com.dada.common.pojo.EUDataGridResult;
 import com.dada.pojo.TbItemParam;
 import com.dada.service.ItemParamService;
 
@@ -47,5 +48,18 @@ public class ItemParamController {
 		return result;
 	}
 
+	@RequestMapping("/list")
+	@ResponseBody
+	public EUDataGridResult getItemParamList(Integer page, Integer rows) {
+		EUDataGridResult result = itemParamService.getItemParamList(page, rows);
+		return result;
+	}
+
+	@RequestMapping("/delete/{itemParamId}")
+	@ResponseBody
+	public DadaResult deleteItem(@PathVariable Long itemParamId) {
+		DadaResult result = itemParamService.deleteItemParam(itemParamId);
+		return result;
+	}
 
 }

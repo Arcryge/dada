@@ -1,0 +1,10 @@
+/**
+ * @author Arcry
+ * @date 2019年5月31日
+ * @time 上午12:37:17
+ */
+package com.dada.pojo;
+
+public class TBItemParamExtend extends TbItemParam {
+
+}
