@@ -4,7 +4,9 @@
 <script type="text/javascript" charset="utf-8" src="/js/kindeditor-4.1.10/lang/zh_CN.js"></script>
 <div style="padding:10px 10px 10px 10px">
 	<form id="itemeEditForm" class="itemForm" method="post">
-		<input type="hidden" name="id"/>
+		<input type="hidden" name="id" id="id"/>
+<!-- 		<input type="hidden" name="status" id="status"/>
+		<input type="hidden" name="created" id="created" /> -->
 	    <table cellpadding="5">
 	        <tr>
 	            <td>商品类目:</td>
@@ -71,14 +73,34 @@
 		itemEditEditor = DADA.createEditor("#itemeEditForm [name=desc]");
 	});
 	
+	function timeParse(timeStamp){
+	    let date = new Date(timeStamp);
+	    console.log(date.toString());
+	    let time = date.getFullYear().toString() + '-' + ((date.getMonth()+1)%13).toString() + 
+	    	'-' + date.getDate().toString() + ' ' + date.getHours().toString() + ':' + 
+	    	(date.getMinutes() > 9 ? date.getMinutes().toString() : '0' + date.getMinutes().toString() ) +
+	    	':' + date.getSeconds().toString();
+	    return time;
+	  }
+	
+	//提交表单
 	function submitForm(){
+		/* var text = $("#created").val();
+		var text1 = timeParse(Number(text));
+		//alert(text1);
+		$("#created").val(text1);
+		let t = $("#created").val();
+		console.log('当前的时间:',t); */
+		//有效性验证
 		if(!$('#itemeEditForm').form('validate')){
 			$.messager.alert('提示','表单还未填写完成!');
 			return ;
 		}
+		//取商品价格，单位为“分”
 		$("#itemeEditForm [name=price]").val(eval($("#itemeEditForm [name=priceView]").val()) * 1000);
+		//同步文本框中的商品描述
 		itemEditEditor.sync();
-		
+		//取商品的规格
 		var paramJson = [];
 		$("#itemeEditForm .params li").each(function(i,e){
 			var trs = $(e).find("tr");
@@ -96,17 +118,33 @@
 				"params": ps
 			});
 		});
+		//把json对象转换成字符串
 		paramJson = JSON.stringify(paramJson);
-		
 		$("#itemeEditForm [name=itemParams]").val(paramJson);
 		
-		$.post("/item/update",$("#itemeEditForm").serialize(), function(data){
+		//ajax的post方式提交表单
+		//$("#itemAddForm").serialize()将表单序列号为key-value形式的字符串
+/* 		$.post("/item/update/"+$("#id").val(),$("#itemeEditForm").serialize(), function(data){
 			if(data.status == 200){
 				$.messager.alert('提示','修改商品成功!','info',function(){
 					$("#itemEditWindow").window('close');
 					$("#itemList").datagrid("reload");
 				});
 			}
-		});
+		});  */
+		
+		
+		 $.ajax({
+	        type: "post",
+	        url: "/item/update/"+$("#id").val(),
+	        dataType: "json",
+	        data:$("#itemeEditForm").serialize(),
+	        success: function (data, textStatus) {
+	        	$.messager.alert('提示','修改商品成功!','info',function(){
+					$("#itemEditWindow").window('close');
+					$("#itemList").datagrid("reload");
+				});
+	        }
+	    }); 
 	}
 </script>

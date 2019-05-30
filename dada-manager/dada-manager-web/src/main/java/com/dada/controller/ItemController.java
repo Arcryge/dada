@@ -29,6 +29,9 @@ public class ItemController {
 	@Autowired
 	private ItemService itemService;
 
+	//@Autowired
+	//private ItemDescService itemDescService;
+
 	@RequestMapping("/item/{itemId}")
 	@ResponseBody
 	public TbItem getItemById(@PathVariable Long itemId) {
@@ -50,10 +53,32 @@ public class ItemController {
 		return result;
 	}
 
-	@RequestMapping(value = "/item/update", method = RequestMethod.POST)
+	@RequestMapping("/item/query/item/desc/{itemId}")
 	@ResponseBody
-	private DadaResult updateItem(TbItem item, String desc, String itemParams) throws Exception {
-		DadaResult result = itemService.createItem(item, desc, itemParams);
+	public DadaResult getItemDesc(@PathVariable Long itemId) {
+		DadaResult result = itemService.getItemDesc(itemId);
+		return result;
+	}
+
+	@RequestMapping("/item/query/item/param/{itemId}")
+	@ResponseBody
+	public DadaResult getItemParam(@PathVariable Long itemId) {
+		DadaResult result = itemService.getItemParam(itemId);
+		return result;
+	}
+
+	@RequestMapping(value = "/item/update/{itemId}", method = RequestMethod.POST)
+	@ResponseBody
+	private DadaResult updateItem(@PathVariable Long itemId, TbItem item, String desc, String itemParams)
+			throws Exception {
+		DadaResult result = itemService.updateItem(itemId, item, desc, itemParams);
+		return result;
+	}
+
+	@RequestMapping("/item/delete/{itemId}")
+	@ResponseBody
+	public DadaResult deleteItem(@PathVariable Long itemId) {
+		DadaResult result = itemService.deleteItem(itemId);
 		return result;
 	}
 }

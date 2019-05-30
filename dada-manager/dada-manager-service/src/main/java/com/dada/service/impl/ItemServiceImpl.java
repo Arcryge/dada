@@ -22,6 +22,7 @@ import com.dada.pojo.TbItemDesc;
 import com.dada.pojo.TbItemExample;
 import com.dada.pojo.TbItemExample.Criteria;
 import com.dada.pojo.TbItemParamItem;
+import com.dada.pojo.TbItemParamItemExample;
 import com.dada.service.ItemService;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
@@ -47,9 +48,8 @@ public class ItemServiceImpl implements ItemService {
 
 	@Override
 	public TbItem getItemById(long itemId) {
-		// TODO Auto-generated method stub
 
-//		TbItem item = itemMapper.selectByPrimaryKey(itemId);
+		//		TbItem item = itemMapper.selectByPrimaryKey(itemId);
 
 		TbItemExample example = new TbItemExample();
 		//添加查询条件
@@ -156,4 +156,124 @@ public class ItemServiceImpl implements ItemService {
 		return DadaResult.ok();
 	}
 
+	/**
+	 * 得到商品详情
+	 * @desc
+	 * @author Arcry
+	 * @param itemId
+	 * @return
+	 * @time 2019年5月30日 下午4:20:31
+	 */
+	@Override
+	public DadaResult getItemDesc(long itemId) {
+		//创建查询条件
+		TbItemDesc itemDesc = itemDescMapper.selectByPrimaryKey(itemId);
+		return DadaResult.ok(itemDesc);
+	}
+
+	/**
+	 * 得到商品规格
+	 * @desc
+	 * @author Arcry
+	 * @param itemId
+	 * @return
+	 * @time 2019年5月30日 下午4:20:54
+	 */
+	@Override
+	public DadaResult getItemParam(long itemId) {
+		//根据商品id查询规格参数
+		//设置查询条件
+		TbItemParamItemExample example = new TbItemParamItemExample();
+		com.dada.pojo.TbItemParamItemExample.Criteria criteria = example.createCriteria();
+		criteria.andItemIdEqualTo(itemId);
+		//执行查询
+		List<TbItemParamItem> list = itemParamItemMapper.selectByExampleWithBLOBs(example);
+		if (list != null && list.size() > 0) {
+			TbItemParamItem paramItem = list.get(0);
+			return DadaResult.ok(paramItem);
+		}
+		return DadaResult.build(400, "无此商品规格");
+	}
+
+	/**
+	 * 修改商品
+	 * @desc
+	 * @author Arcry
+	 * @param itemId
+	 * @return
+	 * @throws Exception 
+	 * @time 2019年5月30日 下午4:29:43
+	 */
+	@Override
+	public DadaResult updateItem(long itemId, TbItem item, String desc, String itemParams) throws Exception {
+		TbItem oldItem = itemMapper.selectByPrimaryKey(itemId);
+		//item补全
+		// '商品状态，1-正常，2-下架，3-删除',
+		item.setStatus((byte) 1);
+		item.setCreated(oldItem.getCreated());
+		item.setUpdated(new Date());
+		//更新数据库
+		itemMapper.updateByPrimaryKey(item);
+		
+		//添加商品描述信息
+		DadaResult result = updateItemDesc(itemId, desc);
+		if (result.getStatus() != 200) {
+			throw new Exception();
+		}
+		//添加规格参数
+		/*		result = updateItemParam(itemId, itemParams);
+				if (result.getStatus() != 200) {
+					throw new Exception();
+				}*/
+		return DadaResult.ok();
+	}
+
+	/**
+	 * 更新商品描述
+	 * @desc 
+	 * @author Arcry
+	 * @return
+	 * @return DadaResult
+	 * @time 2019年5月30日 下午7:58:08
+	 */
+	public DadaResult updateItemDesc(long itemId, String desc) {
+		TbItemDesc itemDesc = new TbItemDesc();
+		itemDesc.setItemId(itemId);
+		itemDesc.setItemDesc(desc);
+		itemDesc.setUpdated(new Date());
+		itemDescMapper.updateByPrimaryKeyWithBLOBs(itemDesc);
+		return DadaResult.ok();
+	}
+
+	/**
+	 * 修改参数
+	 * @desc 
+	 * @author Arcry
+	 * @param itemId
+	 * @param itemParams
+	 * @return
+	 * @return DadaResult
+	 * @time 2019年5月30日 下午8:03:54
+	 */
+	public DadaResult updateItemParam(long itemId, String itemParams) {
+		TbItemParamItem itemParamItem = itemParamItemMapper.selectByItemKey(itemId);
+		itemParamItem.setParamData(itemParams);
+		itemParamItem.setUpdated(new Date());
+		itemParamItemMapper.updateByPrimaryKeyWithBLOBs(itemParamItem);
+		return DadaResult.ok();
+	}
+
+	/**
+	 * 删除商品
+	 * @desc
+	 * @author Arcry
+	 * @param itemId
+	 * @return
+	 * @time 2019年5月31日 上午12:07:20
+	 */
+	@Override
+	public DadaResult deleteItem(long itemId) {
+		itemMapper.deleteByPrimaryKey(itemId);
+		return DadaResult.ok();
+	}
 }

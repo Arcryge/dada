@@ -1,9 +1,11 @@
 package com.dada.mapper;
 
+import java.util.List;
+
+import org.apache.ibatis.annotations.Param;
+
 import com.dada.pojo.TbItemParamItem;
 import com.dada.pojo.TbItemParamItemExample;
-import java.util.List;
-import org.apache.ibatis.annotations.Param;
 
 public interface TbItemParamItemMapper {
     int countByExample(TbItemParamItemExample example);
@@ -21,6 +23,8 @@ public interface TbItemParamItemMapper {
     List<TbItemParamItem> selectByExample(TbItemParamItemExample example);
 
     TbItemParamItem selectByPrimaryKey(Long id);
+
+	TbItemParamItem selectByItemKey(Long id);
 
     int updateByExampleSelective(@Param("record") TbItemParamItem record, @Param("example") TbItemParamItemExample example);
 
