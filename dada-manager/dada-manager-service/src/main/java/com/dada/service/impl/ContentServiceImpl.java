@@ -36,6 +36,7 @@ public class ContentServiceImpl implements ContentService {
 	@Autowired
 	private TbContentMapper contentMapper;
 
+
 	@Value("${REST_BASE_URL}")
 	private String REST_BASE_URL;
 
@@ -75,8 +76,8 @@ public class ContentServiceImpl implements ContentService {
 	}
 
 	@Override
-	public EUDataGridResult getContentList(int page, int rows) {
-		//查询商品列表
+	public EUDataGridResult getContentList(long categoryId, int page, int rows) {
+		/*//查询商品列表
 		TbContentExample example = new TbContentExample();
 		//分页处理
 		PageHelper.startPage(page, rows);
@@ -87,6 +88,20 @@ public class ContentServiceImpl implements ContentService {
 		//取记录总条数
 		PageInfo<TbContent> pageInfo = new PageInfo<>(list);
 		result.setTotal(pageInfo.getTotal());
+		return result;*/
+		//设置分页信息
+		PageHelper.startPage(page, rows);
+		//执行查询
+		TbContentExample example = new TbContentExample();
+		TbContentExample.Criteria criteria = example.createCriteria();
+		criteria.andCategoryIdEqualTo(categoryId);
+		//获取查询结果
+		List<TbContent> list = contentMapper.selectByExample(example);
+		PageInfo<TbContent> pageInfo = new PageInfo<>(list);
+		EUDataGridResult result = new EUDataGridResult();
+		result.setRows(list);
+		result.setTotal(pageInfo.getTotal());
+		//返回结果
 		return result;
 	}
 
@@ -96,6 +111,12 @@ public class ContentServiceImpl implements ContentService {
 		content.setUpdated(new Date());
 		//更新内容
 		contentMapper.updateByPrimaryKey(content);
+		//添加缓存 同步逻辑
+		try {
+			HttpClientUtil.doGet(REST_BASE_URL + REST_CONTENT_SYNC_URL + content.getCategoryId());
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
 		//返回结果
 		return DadaResult.ok();
 	}
@@ -115,6 +136,21 @@ public class ContentServiceImpl implements ContentService {
 	public DadaResult getContent(long id) {
 		TbContent content = contentMapper.selectByPrimaryKey(id);
 		return DadaResult.ok(content);
+	}
+
+	@Override
+	public List<TbContent> getContentByCid(long cid) {
+
+		//缓存中没有查到，需要查询数据库
+		TbContentExample example = new TbContentExample();
+		TbContentExample.Criteria criteria = example.createCriteria();
+		//设置查询条件
+		criteria.andCategoryIdEqualTo(cid);
+		//执行查询结果
+		List<TbContent> list = contentMapper.selectByExample(example);
+
+		//返回结果
+		return list;
 	}
 
 }

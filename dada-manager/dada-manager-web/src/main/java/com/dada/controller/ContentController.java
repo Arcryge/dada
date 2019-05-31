@@ -39,8 +39,8 @@ public class ContentController {
 
 	@RequestMapping("/query/list")
 	@ResponseBody
-	public EUDataGridResult getContentList(Integer page, Integer rows) {
-		EUDataGridResult result = contentService.getContentList(page, rows);
+	public EUDataGridResult getContentList(Long categoryId, Integer page, Integer rows) {
+		EUDataGridResult result = contentService.getContentList(categoryId, page, rows);
 		return result;
 	}
 
@@ -51,21 +51,21 @@ public class ContentController {
 		return result;
 	}
 
-	@RequestMapping("/rest/content/edit")
+	@RequestMapping("/edit")
 	@ResponseBody
 	public DadaResult updateContent(TbContent content) {
 		DadaResult result = contentService.updateContent(content);
 		return result;
 	}
 
-	@RequestMapping("/content/delete")
+	@RequestMapping("/delete")
 	@ResponseBody
 	public DadaResult deleteContent(String ids) {
 		DadaResult result = contentService.deleteContent(ids);
 		return result;
 	}
 
-	@RequestMapping("/content/getContent")
+	@RequestMapping("/getContent")
 	@ResponseBody
 	public DadaResult getContent(Long id) {
 		DadaResult result = contentService.getContent(id);
