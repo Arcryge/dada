@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <workingSetManager>
 <workingSet editPageId="org.eclipse.ui.resourceWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1555597788175_1" label="dada-manager" name="dada-manager">
-<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/dada-common" type="4"/>
-<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/dada-manager" type="4"/>
-<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/dada-manager-mapper" type="4"/>
-<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/dada-manager-pojo" type="4"/>
-<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/dada-manager-service" type="4"/>
-<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/dada-manager-web" type="4"/>
-<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/dada-order" type="4"/>
-<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/dada-parent" type="4"/>
-<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/dada-portal" type="4"/>
 <item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/dada-rest" type="4"/>
-<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/dada-search" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/dada-portal" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/dada-manager-pojo" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/dada-manager" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/dada-parent" type="4"/>
 <item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/dada-sso" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/dada-common" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/dada-order" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/dada-search" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/dada-manager-service" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/dada-manager-mapper" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/dada-manager-web" type="4"/>
 </workingSet>
 <workingSet editPageId="org.eclipse.jdt.ui.JavaWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1556163269412_3" label="seftrain" name="seftrain"/>
 <workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1529549214081_0" label="Window Working Set" name="Aggregate for window 1529549214081"/>

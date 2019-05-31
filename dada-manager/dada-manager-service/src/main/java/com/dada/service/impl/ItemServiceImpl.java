@@ -276,4 +276,40 @@ public class ItemServiceImpl implements ItemService {
 		itemMapper.deleteByPrimaryKey(itemId);
 		return DadaResult.ok();
 	}
+
+	/**
+	 * 根据id，更改商品状态1-正常，2-下架，3-删除
+	 * @desc
+	 * @author Arcry
+	 * @param ids
+	 * @param method
+	 * @return
+	 * @time 2019年5月31日 下午8:48:46
+	 */
+	@Override
+	public DadaResult updateItemStatus(List<Long> ids, String method) {
+		TbItem item = new TbItem();
+		if (method.equals("reshelf")) {
+			// 正常，更新status=3即可
+			item.setStatus((byte) 1);
+		} else if (method.equals("instock")) {
+			// 下架，更新status=3即可
+			item.setStatus((byte) 2);
+		} else if (method.equals("delete")) {
+			// 删除，更新status=3即可
+			item.setStatus((byte) 3);
+		}
+
+		for (Long id : ids) {
+			// 创建查询条件，根据id更新
+			TbItemExample tbItemExample = new TbItemExample();
+			Criteria criteria = tbItemExample.createCriteria();
+			criteria.andIdEqualTo(id);
+			// 第一个参数 是要修改的部分值组成的对象，其中有些属性为null则表示该项不修改。
+			// 第二个参数 是一个对应的查询条件的类， 通过这个类可以实现 order by 和一部分的where 条件。
+			itemMapper.updateByExampleSelective(item, tbItemExample);
+		}
+		return DadaResult.ok();
+
+	}
 }

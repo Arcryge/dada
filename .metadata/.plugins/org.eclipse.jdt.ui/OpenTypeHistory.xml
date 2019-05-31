@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <typeInfoHistroy>
 <typeInfo handle="=dada-manager-service/C:\/DWDevEnvironment\/Java\/jdk1.7.0_67_x64\/jre\/lib\/rt.jar&lt;java.awt.event(ItemListener.class[ItemListener" modifiers="1537" timestamp="1433990537369"/>
-<typeInfo handle="=dada-manager-service/src\/main\/java&lt;com.dada.service{ItemService.java[ItemService" modifiers="513" timestamp="1558249491341"/>
+<typeInfo handle="=dada-manager-service/src\/main\/java&lt;com.dada.service{ItemService.java[ItemService" modifiers="513" timestamp="1559232427148"/>
 <typeInfo handle="=dada-manager-service/src\/main\/java&lt;com.dada.service{ItemCatService.java[ItemCatService" modifiers="513" timestamp="1556778493572"/>
 <typeInfo handle="=dada-manager-service/src\/main\/java&lt;com.dada.service{PictureService.java[PictureService" modifiers="513" timestamp="1558166105748"/>
-<typeInfo handle="=dada-manager-service/src\/main\/java&lt;com.dada.service{ItemParamService.java[ItemParamService" modifiers="513" timestamp="1558238612508"/>
+<typeInfo handle="=dada-manager-service/src\/main\/java&lt;com.dada.service{ItemParamService.java[ItemParamService" modifiers="513" timestamp="1559238770337"/>
 <typeInfo handle="=dada-manager-service/src\/main\/java&lt;com.dada.service{ItemParamItemService.java[ItemParamItemService" modifiers="513" timestamp="1558254683107"/>
 <typeInfo handle="=dada-rest/src\/main\/java&lt;com.dada.rest.service{ItemCatService.java[ItemCatService" modifiers="513" timestamp="1558285075327"/>
-<typeInfo handle="=dada-manager-service/src\/main\/java&lt;com.dada.service{ContentCategoryService.java[ContentCategoryService" modifiers="513" timestamp="1558326384894"/>
-<typeInfo handle="=dada-manager-service/src\/main\/java&lt;com.dada.service{ContentService.java[ContentService" modifiers="513" timestamp="1558673072832"/>
+<typeInfo handle="=dada-manager-service/src\/main\/java&lt;com.dada.service{ContentCategoryService.java[ContentCategoryService" modifiers="513" timestamp="1559242059260"/>
+<typeInfo handle="=dada-manager-service/src\/main\/java&lt;com.dada.service{ContentService.java[ContentService" modifiers="513" timestamp="1559239313593"/>
 <typeInfo handle="=dada-rest/src\/main\/java&lt;com.dada.rest.service{ContentService.java[ContentService" modifiers="513" timestamp="1558339451094"/>
 <typeInfo handle="=dada-portal/src\/main\/java&lt;com.dada.portal.service{ContentService.java[ContentService" modifiers="513" timestamp="1558354183266"/>
 <typeInfo handle="=dada-rest/src\/main\/java&lt;com.dada.rest.dao{JedisClient.java[JedisClient" modifiers="513" timestamp="1558668853493"/>
@@ -22,5 +22,6 @@
 <typeInfo handle="=dada-portal/src\/main\/java&lt;com.dada.portal.service{CartService.java[CartService" modifiers="513" timestamp="1559032479368"/>
 <typeInfo handle="=dada-order/src\/main\/java&lt;com.dada.order.service{OrderService.java[OrderService" modifiers="513" timestamp="1559059111920"/>
 <typeInfo handle="=dada-manager-mapper/src\/main\/java&lt;com.dada.mapper{TbOrderItemMapper.java[TbOrderItemMapper" modifiers="513" timestamp="1555683941101"/>
-<typeInfo handle="=dada-portal/src\/main\/java&lt;com.dada.portal.service{OrderService.java[OrderService" modifiers="513" timestamp="1559095913541"/>
+<typeInfo handle="=dada-portal/src\/main\/java&lt;com.dada.portal.service{OrderService.java[OrderService" modifiers="513" timestamp="1559097336057"/>
+<typeInfo handle="=dada-manager-pojo/src\/main\/java&lt;com.dada.pojo{TbItemParam.java[TbItemParam" modifiers="1" timestamp="1555683940966"/>
 </typeInfoHistroy>

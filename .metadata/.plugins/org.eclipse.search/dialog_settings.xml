@@ -20,23 +20,10 @@
 		<item value="false" key="SEARCH_DERIVED"/>
 		<item value="false" key="SEARCH_IN_BINARIES"/>
 		<section name="HISTORY6">
-			<item value="true" key="ignoreCase"/>
+			<item value="false" key="ignoreCase"/>
 			<item value="2" key="scope"/>
 			<item value="false" key="isWholeWord"/>
-			<item value="天" key="textPattern"/>
-			<item value="false" key="isRegExSearch"/>
-			<list key="fileNamePatterns">
-				<item value="*"/>
-			</list>
-			<list key="workingSets">
-				<item value="dada-manager"/>
-			</list>
-		</section>
-		<section name="HISTORY7">
-			<item value="true" key="ignoreCase"/>
-			<item value="2" key="scope"/>
-			<item value="false" key="isWholeWord"/>
-			<item value="picFileUpload" key="textPattern"/>
+			<item value="_JD_ALLSORT" key="textPattern"/>
 			<item value="false" key="isRegExSearch"/>
 			<list key="fileNamePatterns">
 				<item value="*.js"/>
@@ -46,121 +33,134 @@
 				<item value="dada-manager"/>
 			</list>
 		</section>
-		<section name="HISTORY4">
-			<item value="true" key="ignoreCase"/>
+		<section name="HISTORY7">
+			<item value="false" key="ignoreCase"/>
 			<item value="2" key="scope"/>
 			<item value="false" key="isWholeWord"/>
-			<item value="淘淘" key="textPattern"/>
+			<item value="http://www.taotao.com/products/2.html.html" key="textPattern"/>
 			<item value="false" key="isRegExSearch"/>
 			<list key="fileNamePatterns">
 				<item value="*"/>
+			</list>
+			<list key="workingSets">
+				<item value="dada-manager"/>
+			</list>
+		</section>
+		<section name="HISTORY4">
+			<item value="false" key="ignoreCase"/>
+			<item value="2" key="scope"/>
+			<item value="false" key="isWholeWord"/>
+			<item value="家电通讯" key="textPattern"/>
+			<item value="false" key="isRegExSearch"/>
+			<list key="fileNamePatterns">
+				<item value="*.js"/>
+				<item value="*jsp"/>
 			</list>
 			<list key="workingSets">
 				<item value="dada-manager"/>
 			</list>
 		</section>
 		<section name="HISTORY10">
-			<item value="true" key="ignoreCase"/>
+			<item value="false" key="ignoreCase"/>
 			<item value="2" key="scope"/>
 			<item value="false" key="isWholeWord"/>
-			<item value="ts_" key="textPattern"/>
+			<item value="home.js" key="textPattern"/>
 			<item value="false" key="isRegExSearch"/>
 			<list key="fileNamePatterns">
-				<item value="*"/>
+				<item value="*.js"/>
+				<item value="*jsp"/>
 			</list>
 			<list key="workingSets">
-				<item value="seftrain"/>
+				<item value="dada-manager"/>
 			</list>
 		</section>
 		<section name="HISTORY5">
-			<item value="true" key="ignoreCase"/>
+			<item value="false" key="ignoreCase"/>
 			<item value="2" key="scope"/>
 			<item value="false" key="isWholeWord"/>
-			<item value="taotao" key="textPattern"/>
+			<item value="家电通讯楼层" key="textPattern"/>
 			<item value="false" key="isRegExSearch"/>
 			<list key="fileNamePatterns">
-				<item value="*"/>
+				<item value="*.js"/>
+				<item value="*jsp"/>
 			</list>
 			<list key="workingSets">
 				<item value="dada-manager"/>
 			</list>
 		</section>
 		<section name="EXTENSIONS">
-			<item value=" *.js" key="0"/>
-			<item value="*.*jsp, *.class, *.css, *.htm, *.html, *.java, *.js, *.json, *.jsp, *.xmi" key="1"/>
-			<item value="*" key="2"/>
-			<item value="*.js,*jsp" key="3"/>
-			<item value="*.js" key="4"/>
+			<item value="*.js, *jsp" key="0"/>
+			<item value="*" key="1"/>
+			<item value="*.js,*jsp" key="2"/>
+			<item value="*.js" key="3"/>
+			<item value=" *.js" key="4"/>
+			<item value="*.*jsp, *.class, *.css, *.htm, *.html, *.java, *.js, *.json, *.jsp, *.xmi" key="5"/>
 		</section>
 		<section name="HISTORY11">
-			<item value="true" key="ignoreCase"/>
+			<item value="false" key="ignoreCase"/>
 			<item value="2" key="scope"/>
 			<item value="false" key="isWholeWord"/>
-			<item value="instr" key="textPattern"/>
-			<item value="false" key="isRegExSearch"/>
-			<list key="fileNamePatterns">
-				<item value="*"/>
-			</list>
-			<list key="workingSets">
-				<item value="seftrain"/>
-			</list>
-		</section>
-		<section name="HISTORY8">
-			<item value="true" key="ignoreCase"/>
-			<item value="2" key="scope"/>
-			<item value="false" key="isWholeWord"/>
-			<item value="selectItemCat" key="textPattern"/>
+			<item value="home-area" key="textPattern"/>
 			<item value="false" key="isRegExSearch"/>
 			<list key="fileNamePatterns">
 				<item value="*.js"/>
+				<item value="*jsp"/>
+			</list>
+			<list key="workingSets">
+				<item value="dada-manager"/>
+			</list>
+		</section>
+		<section name="HISTORY8">
+			<item value="false" key="ignoreCase"/>
+			<item value="2" key="scope"/>
+			<item value="false" key="isWholeWord"/>
+			<item value="电子书刊" key="textPattern"/>
+			<item value="false" key="isRegExSearch"/>
+			<list key="fileNamePatterns">
+				<item value="*.js"/>
+				<item value="*jsp"/>
 			</list>
 			<list key="workingSets">
 				<item value="dada-manager"/>
 			</list>
 		</section>
 		<section name="HISTORY9">
-			<item value="true" key="ignoreCase"/>
+			<item value="false" key="ignoreCase"/>
 			<item value="2" key="scope"/>
 			<item value="false" key="isWholeWord"/>
-			<item value="doNewProcess" key="textPattern"/>
+			<item value="我的订单" key="textPattern"/>
 			<item value="false" key="isRegExSearch"/>
 			<list key="fileNamePatterns">
-				<item value="*"/>
+				<item value="*.js"/>
+				<item value="*jsp"/>
 			</list>
 			<list key="workingSets">
-				<item value="seftrain"/>
+				<item value="dada-manager"/>
 			</list>
 		</section>
 		<section name="HISTORY2">
 			<item value="false" key="ignoreCase"/>
 			<item value="2" key="scope"/>
 			<item value="false" key="isWholeWord"/>
-			<item value="TT" key="textPattern"/>
+			<item value="调查问卷" key="textPattern"/>
 			<item value="false" key="isRegExSearch"/>
 			<list key="fileNamePatterns">
-				<item value="*.java"/>
-				<item value="*.jsp"/>
-				<item value="*.xmi"/>
-				<item value="*.*jsp"/>
-				<item value="*.css"/>
-				<item value="*.json"/>
-				<item value="*.htm"/>
-				<item value="*.html"/>
-				<item value="*.class"/>
 				<item value="*.js"/>
+				<item value="*jsp"/>
 			</list>
 			<list key="workingSets">
 				<item value="dada-manager"/>
 			</list>
 		</section>
 		<section name="HISTORY3">
-			<item value="true" key="ignoreCase"/>
+			<item value="false" key="ignoreCase"/>
 			<item value="2" key="scope"/>
 			<item value="false" key="isWholeWord"/>
-			<item value="taotao-logo.gif" key="textPattern"/>
+			<item value="分享到" key="textPattern"/>
 			<item value="false" key="isRegExSearch"/>
 			<list key="fileNamePatterns">
-				<item value="*"/>
+				<item value="*.js"/>
+				<item value="*jsp"/>
 			</list>
 			<list key="workingSets">
 				<item value="dada-manager"/>
@@ -170,9 +170,10 @@
 			<item value="false" key="ignoreCase"/>
 			<item value="2" key="scope"/>
 			<item value="false" key="isWholeWord"/>
-			<item value="decrement" key="textPattern"/>
+			<item value="家用电器" key="textPattern"/>
 			<item value="false" key="isRegExSearch"/>
 			<list key="fileNamePatterns">
+				<item value="*jsp"/>
 				<item value="*.js"/>
 			</list>
 			<list key="workingSets">
@@ -183,19 +184,11 @@
 			<item value="false" key="ignoreCase"/>
 			<item value="2" key="scope"/>
 			<item value="false" key="isWholeWord"/>
-			<item value="TT_TOKEN" key="textPattern"/>
+			<item value="research" key="textPattern"/>
 			<item value="false" key="isRegExSearch"/>
 			<list key="fileNamePatterns">
-				<item value="*.java"/>
-				<item value="*.jsp"/>
-				<item value="*.xmi"/>
-				<item value="*.*jsp"/>
-				<item value="*.css"/>
-				<item value="*.json"/>
-				<item value="*.htm"/>
-				<item value="*.html"/>
-				<item value="*.class"/>
 				<item value="*.js"/>
+				<item value="*jsp"/>
 			</list>
 			<list key="workingSets">
 				<item value="dada-manager"/>

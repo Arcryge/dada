@@ -52,7 +52,7 @@ var TT = DADA = {
         } else if(val == 2){
         	return '<span style="color:red;">下架</span>';
         } else {
-        	return '未知';
+        	return '<span style="color:red;">删除</span>';
         }
     },
     

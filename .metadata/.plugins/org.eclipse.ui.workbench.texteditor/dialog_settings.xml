@@ -6,21 +6,27 @@
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="" key="selection"/>
+		<item value="research" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
-			<item value="images[0]"/>
-			<item value="dada-manager"/>
-			<item value="dada-rest"/>
-			<item value="quantity-text"/>
-			<item value="changeQuantity-11345721-1-1-0"/>
-			<item value="+"/>
-			<item value="decrement"/>
-			<item value="ITEM_INFO_URL"/>
-			<item value="ITME_INFO_URL"/>
+			<item value="research"/>
+			<item value="调查问卷"/>
+			<item value="left"/>
+			<item value="我的订单"/>
+			<item value="setArea"/>
+			<item value="修改"/>
+			<item value="doSwithTab(&apos;pay&apos;)"/>
+			<item value="save_Pay(4)"/>
+			<item value="use_NewConsignee"/>
+			<item value="home-area"/>
+			<item value="service-2013"/>
+			<item value="收藏达达"/>
+			<item value="shortcut-2013"/>
+			<item value="ad1"/>
+			<item value="AD1"/>
 		</list>
 		<list key="replacehistory">
 			<item value="dada-order"/>
@@ -40,7 +46,7 @@
 		<item value="300" key="DIALOG_WIDTH"/>
 		<item value="1|Microsoft YaHei UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Microsoft YaHei UI" key="DIALOG_FONT_NAME"/>
 		<item value="410" key="DIALOG_HEIGHT"/>
-		<item value="39" key="DIALOG_X_ORIGIN"/>
-		<item value="210" key="DIALOG_Y_ORIGIN"/>
+		<item value="1018" key="DIALOG_X_ORIGIN"/>
+		<item value="138" key="DIALOG_Y_ORIGIN"/>
 	</section>
 </section>
