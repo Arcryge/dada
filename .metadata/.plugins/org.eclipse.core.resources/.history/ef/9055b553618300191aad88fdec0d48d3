@@ -76,15 +76,15 @@ function setClothingPlist2(t) {
     })
 }
 function setCheckEptArea() {
-    var t = function(t) {
-        if (0 !== t.type) {
-            var e = $("#header-2013"), i = $('<div id="jd-ept-link" style="height: 60px;margin-bottom:10px;"></div>'), a = "http://en.jd.com/", n = '<div class="w" clstag="homepage|keycount|home2013|ept"><a target="_blank" href="' + a + '" style="display: block;text-align: center;border: 2px solid #F0AF00;background: #FFFBDD url(/images/blank.gif);">' + '<img style="vertical-align: top;" class="loading-style2" data-img="1" src="http://img11.360buyimg.com/da/g14/M03/1E/18/rBEhVlNUvcEIAAAAAAAgBol2wPcAAMVkwEJL5gAACAe087.png" width="874" height="56" />' + "</a></div>";
-            i.html(n), e.after(i)
-        }
-    };
-    $.ajax({url: "http://ai.jd.com/jdip/useripinfo.php",dataType: "jsonp",success: function(e) {
-            void 0 !== e && t(e)
-        }})
+//    var t = function(t) {
+//        if (0 !== t.type) {
+//            var e = $("#header-2013"), i = $('<div id="jd-ept-link" style="height: 60px;margin-bottom:10px;"></div>'), a = "http://en.jd.com/", n = '<div class="w" clstag="homepage|keycount|home2013|ept"><a target="_blank" href="' + a + '" style="display: block;text-align: center;border: 2px solid #F0AF00;background: #FFFBDD url(/images/blank.gif);">' + '<img style="vertical-align: top;" class="loading-style2" data-img="1" src="http://img11.360buyimg.com/da/g14/M03/1E/18/rBEhVlNUvcEIAAAAAAAgBol2wPcAAMVkwEJL5gAACAe087.png" width="874" height="56" />' + "</a></div>";
+//            i.html(n), e.after(i)
+//        }
+//    };
+//    $.ajax({url: "http://ai.jd.com/jdip/useripinfo.php",dataType: "jsonp",success: function(e) {
+//            void 0 !== e && t(e)
+//        }})
 }
 function hotSaleMod(t) {
     (function() {
@@ -407,7 +407,6 @@ var Floors = {cacheData: null,data: function(t) {
         window[e] = null
     }, i.src = t, i = null
 };
-
 (function() {
     document.referrer.match(/^http:\/\/\S*\.360buy\.com/) && !$.cookie("_fv") && $("#shortcut-2013 .fl li").append('<div class="jtip"><div class="jtip-arrow"><div class="jtip-arrow1"></div><div class="jtip-arrow2"></div></div><div class="jtip-content">\u628a\u4eac\u4e1c\u52a0\u5165\u6536\u85cf\u5939<br />\u4e00\u952e\u8f7b\u677e\u8bbf\u95eeJD.COM</div><div class="jtip-close" onclick="this.parentNode.style.display=\'none\'">\u00d7</div></div>'), $(".plist .style1 .p-img,.plist .style2 .p-img").bind("mouseover", function() {
         $(this).css("opacity", "0.7")

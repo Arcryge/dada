@@ -44,13 +44,13 @@ function renderAccordion(t) {
         $(this).attr("clstag", "homepage|keycount|home2013|22c" + (t + 2))
     })
 }
-/*function setArea() {
+function setArea() {
     var t, e = $("#shortcut-2013"), i = readCookie("areaId") || 1, a = {list: [{text: "\u5317\u4eac",val: 1}, {text: "\u4e0a\u6d77",val: 2}, {text: "\u5929\u6d25",val: 3}, {text: "\u91cd\u5e86",val: 4}, {text: "\u6cb3\u5317",val: 5}, {text: "\u5c71\u897f",val: 6}, {text: "\u6cb3\u5357",val: 7}, {text: "\u8fbd\u5b81",val: 8}, {text: "\u5409\u6797",val: 9}, {text: "\u9ed1\u9f99\u6c5f",val: 10}, {text: "\u5185\u8499\u53e4",val: 11}, {text: "\u6c5f\u82cf",val: 12}, {text: "\u5c71\u4e1c",val: 13}, {text: "\u5b89\u5fbd",val: 14}, {text: "\u6d59\u6c5f",val: 15}, {text: "\u798f\u5efa",val: 16}, {text: "\u6e56\u5317",val: 17}, {text: "\u6e56\u5357",val: 18}, {text: "\u5e7f\u4e1c",val: 19}, {text: "\u5e7f\u897f",val: 20}, {text: "\u6c5f\u897f",val: 21}, {text: "\u56db\u5ddd",val: 22}, {text: "\u6d77\u5357",val: 23}, {text: "\u8d35\u5dde",val: 24}, {text: "\u4e91\u5357",val: 25}, {text: "\u897f\u85cf",val: 26}, {text: "\u9655\u897f",val: 27}, {text: "\u7518\u8083",val: 28}, {text: "\u9752\u6d77",val: 29}, {text: "\u5b81\u590f",val: 30}, {text: "\u65b0\u7586",val: 31}, {text: "\u53f0\u6e7e",val: 32}, {text: "\u9999\u6e2f",val: 42}, {text: "\u6fb3\u95e8",val: 43}, {text: "\u9493\u9c7c\u5c9b",val: 84}, {link: !0,text: "\u6d77\u5916",val: "http://en.jd.com/chinese.html"}],key: {A1: {text: "\u5317\u4eac",val: 1},A2: {text: "\u4e0a\u6d77",val: 2},A3: {text: "\u5929\u6d25",val: 3},A4: {text: "\u91cd\u5e86",val: 4},A5: {text: "\u6cb3\u5317",val: 5},A6: {text: "\u5c71\u897f",val: 6},A7: {text: "\u6cb3\u5357",val: 7},A8: {text: "\u8fbd\u5b81",val: 8},A9: {text: "\u5409\u6797",val: 9},A10: {text: "\u9ed1\u9f99\u6c5f",val: 10},A11: {text: "\u5185\u8499\u53e4",val: 11},A12: {text: "\u6c5f\u82cf",val: 12},A13: {text: "\u5c71\u4e1c",val: 13},A14: {text: "\u5b89\u5fbd",val: 14},A15: {text: "\u6d59\u6c5f",val: 15},A16: {text: "\u798f\u5efa",val: 16},A17: {text: "\u6e56\u5317",val: 17},A18: {text: "\u6e56\u5357",val: 18},A19: {text: "\u5e7f\u4e1c",val: 19},A20: {text: "\u5e7f\u897f",val: 20},A21: {text: "\u6c5f\u897f",val: 21},A22: {text: "\u56db\u5ddd",val: 22},A23: {text: "\u6d77\u5357",val: 23},A24: {text: "\u8d35\u5dde",val: 24},A25: {text: "\u4e91\u5357",val: 25},A26: {text: "\u897f\u85cf",val: 26},A27: {text: "\u9655\u897f",val: 27},A28: {text: "\u7518\u8083",val: 28},A29: {text: "\u9752\u6d77",val: 29},A30: {text: "\u5b81\u590f",val: 30},A31: {text: "\u65b0\u7586",val: 31},A32: {text: "\u53f0\u6e7e",val: 32},A42: {text: "\u9999\u6e2f",val: 42},A43: {text: "\u6fb3\u95e8",val: 43},A84: {text: "\u9493\u9c7c\u5c9b",val: 84}}}, n = a.key["A" + i].text, s = '<dl id="home-area">    <dt>        <b></b>        <strong>${def.text}</strong>        <a href="javascript:;">[\u66f4\u6362]</a>        <span class="blank"></span>    </dt>    <dd class="dd">        <ul class="lh">            {for item in list}                {if item.link}                    <li><a href="${item.val}" target="_blank">${item.text}</a></li>                {else}                    <li><a href="#none" data-id="${item.val}">${item.text}</a></li>                {/if}            {/for}        </ul>        <div class="close" onclick="$(\'#home-area\').removeClass(\'hover\')">\u00d7</div>   </dd></dl>';
     a.def = {text: n,val: i}, e.find("ul").eq(0).after(s.process(a)), t = $("#home-area"), t.Jdropdown({event: "click"}), t.find(".dd ul a[data-id]").click(function() {
         var e = $(this).attr("data-id");
         createCookie("areaId", e, 10, "/;domain=jd.com"), createCookie("ipLoc-djd", e + "-0-0-0", 10, "/;domain=jd.com"), location.href = "http://www.jd.com/", t.removeClass("hover")
     })
-}*/
+}
 function setShowcase(t) {
     var e = $(t);
     if (pageConfig.wideVersion && pageConfig.compatible, $.browser.msie && 9 >= parseInt($.browser.version, 10)) {
@@ -76,15 +76,15 @@ function setClothingPlist2(t) {
     })
 }
 function setCheckEptArea() {
-    var t = function(t) {
-        if (0 !== t.type) {
-            var e = $("#header-2013"), i = $('<div id="jd-ept-link" style="height: 60px;margin-bottom:10px;"></div>'), a = "http://en.jd.com/", n = '<div class="w" clstag="homepage|keycount|home2013|ept"><a target="_blank" href="' + a + '" style="display: block;text-align: center;border: 2px solid #F0AF00;background: #FFFBDD url(/images/blank.gif);">' + '<img style="vertical-align: top;" class="loading-style2" data-img="1" src="http://img11.360buyimg.com/da/g14/M03/1E/18/rBEhVlNUvcEIAAAAAAAgBol2wPcAAMVkwEJL5gAACAe087.png" width="874" height="56" />' + "</a></div>";
-            i.html(n), e.after(i)
-        }
-    };
-    $.ajax({url: "http://ai.jd.com/jdip/useripinfo.php",dataType: "jsonp",success: function(e) {
-            void 0 !== e && t(e)
-        }})
+//    var t = function(t) {
+//        if (0 !== t.type) {
+//            var e = $("#header-2013"), i = $('<div id="jd-ept-link" style="height: 60px;margin-bottom:10px;"></div>'), a = "http://en.jd.com/", n = '<div class="w" clstag="homepage|keycount|home2013|ept"><a target="_blank" href="' + a + '" style="display: block;text-align: center;border: 2px solid #F0AF00;background: #FFFBDD url(/images/blank.gif);">' + '<img style="vertical-align: top;" class="loading-style2" data-img="1" src="http://img11.360buyimg.com/da/g14/M03/1E/18/rBEhVlNUvcEIAAAAAAAgBol2wPcAAMVkwEJL5gAACAe087.png" width="874" height="56" />' + "</a></div>";
+//            i.html(n), e.after(i)
+//        }
+//    };
+//    $.ajax({url: "http://ai.jd.com/jdip/useripinfo.php",dataType: "jsonp",success: function(e) {
+//            void 0 !== e && t(e)
+//        }})
 }
 function hotSaleMod(t) {
     (function() {
@@ -407,7 +407,6 @@ var Floors = {cacheData: null,data: function(t) {
         window[e] = null
     }, i.src = t, i = null
 };
-
 (function() {
     document.referrer.match(/^http:\/\/\S*\.360buy\.com/) && !$.cookie("_fv") && $("#shortcut-2013 .fl li").append('<div class="jtip"><div class="jtip-arrow"><div class="jtip-arrow1"></div><div class="jtip-arrow2"></div></div><div class="jtip-content">\u628a\u4eac\u4e1c\u52a0\u5165\u6536\u85cf\u5939<br />\u4e00\u952e\u8f7b\u677e\u8bbf\u95eeJD.COM</div><div class="jtip-close" onclick="this.parentNode.style.display=\'none\'">\u00d7</div></div>'), $(".plist .style1 .p-img,.plist .style2 .p-img").bind("mouseover", function() {
         $(this).css("opacity", "0.7")

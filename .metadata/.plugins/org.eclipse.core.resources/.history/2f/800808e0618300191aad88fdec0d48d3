@@ -76,15 +76,15 @@ function setClothingPlist2(t) {
     })
 }
 function setCheckEptArea() {
-    var t = function(t) {
-        if (0 !== t.type) {
-            var e = $("#header-2013"), i = $('<div id="jd-ept-link" style="height: 60px;margin-bottom:10px;"></div>'), a = "http://en.jd.com/", n = '<div class="w" clstag="homepage|keycount|home2013|ept"><a target="_blank" href="' + a + '" style="display: block;text-align: center;border: 2px solid #F0AF00;background: #FFFBDD url(/images/blank.gif);">' + '<img style="vertical-align: top;" class="loading-style2" data-img="1" src="http://img11.360buyimg.com/da/g14/M03/1E/18/rBEhVlNUvcEIAAAAAAAgBol2wPcAAMVkwEJL5gAACAe087.png" width="874" height="56" />' + "</a></div>";
-            i.html(n), e.after(i)
-        }
-    };
-    $.ajax({url: "http://ai.jd.com/jdip/useripinfo.php",dataType: "jsonp",success: function(e) {
-            void 0 !== e && t(e)
-        }})
+//    var t = function(t) {
+//        if (0 !== t.type) {
+//            var e = $("#header-2013"), i = $('<div id="jd-ept-link" style="height: 60px;margin-bottom:10px;"></div>'), a = "http://en.jd.com/", n = '<div class="w" clstag="homepage|keycount|home2013|ept"><a target="_blank" href="' + a + '" style="display: block;text-align: center;border: 2px solid #F0AF00;background: #FFFBDD url(/images/blank.gif);">' + '<img style="vertical-align: top;" class="loading-style2" data-img="1" src="http://img11.360buyimg.com/da/g14/M03/1E/18/rBEhVlNUvcEIAAAAAAAgBol2wPcAAMVkwEJL5gAACAe087.png" width="874" height="56" />' + "</a></div>";
+//            i.html(n), e.after(i)
+//        }
+//    };
+//    $.ajax({url: "http://ai.jd.com/jdip/useripinfo.php",dataType: "jsonp",success: function(e) {
+//            void 0 !== e && t(e)
+//        }})
 }
 function hotSaleMod(t) {
     (function() {
