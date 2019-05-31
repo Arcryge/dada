@@ -1531,8 +1531,7 @@ var Refresh = {init: function() {
             }}), mark(location.href.match(/(\d+).html/)[1], 5)
     }), $("#site-qq,#site-msn,#site-email").parent().remove(), window.pageConfig) {
         var d = new pageConfig.FN_InitSidebar, p = "98523";
-        //832 === G.cat[2] && (p = "737542"), d.addItem('<a class="research" target="_blank" href="http://surveys.jd.com/index.php?r=survey/index/sid/' + p + '/lang/zh-Hans"><b></b>\u8c03\u67e5\u95ee\u5377</a>'), d.setTop(), d.scroll()
-        832 === G.cat[2] && (p = "737542"),  d.setTop(), d.scroll()
+        832 === G.cat[2] && (p = "737542"), d.addItem('<a class="research" target="_blank" href="http://surveys.jd.com/index.php?r=survey/index/sid/' + p + '/lang/zh-Hans"><b></b>\u8c03\u67e5\u95ee\u5377</a>'), d.setTop(), d.scroll()
     }
     if (setImButton(G.sku), 1319 === G.cat[0] && $.ajax({url: "http://misc.360buyimg.com/product/js/2012/item.baby.js?ver=20140123",cache: !0,dataType: "script",scriptCharset: "gb2312"}), jdSref && searchEngineSource) {
         var m = "&encode=utf-8";

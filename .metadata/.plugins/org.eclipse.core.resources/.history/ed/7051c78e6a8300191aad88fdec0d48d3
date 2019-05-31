@@ -39,11 +39,11 @@
 <!-- header start -->
 <jsp:include page="commons/header.jsp" />
 <!-- header end -->
-<!-- <div class="w">
+<div class="w">
 	<div class="breadcrumb">
 		<strong><a href="http://channel.jd.com/electronic.html">家用电器</a></strong><span>&nbsp;&gt;&nbsp;<a href="http://channel.jd.com/737-794.html" >大 家 电</a>&nbsp;&gt;&nbsp;<a href="http://list.jd.com/737-794-798.html" >平板电视</a>&nbsp;&gt;&nbsp;</span><script type="text/javascript">pageConfig.product.cat=[737,794,798];</script><span><a href="http://www.jd.com/pinpai/798-20710.html" >长虹（CHANGHONG）</a>&nbsp;&gt;&nbsp;<a href="http://item.jd.com/1221882.html" >长虹LED42538ES</a></span>
 	</div>
-</div> --><!--breadcrumb end-->
+</div><!--breadcrumb end-->
 <div class="w">
 	<div id="product-intro" >
 		<div id="name">

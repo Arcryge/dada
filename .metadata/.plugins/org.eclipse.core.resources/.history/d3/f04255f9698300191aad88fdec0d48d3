@@ -39,11 +39,11 @@
 <!-- header start -->
 <jsp:include page="commons/header.jsp" />
 <!-- header end -->
-<!-- <div class="w">
+<div class="w">
 	<div class="breadcrumb">
 		<strong><a href="http://channel.jd.com/electronic.html">家用电器</a></strong><span>&nbsp;&gt;&nbsp;<a href="http://channel.jd.com/737-794.html" >大 家 电</a>&nbsp;&gt;&nbsp;<a href="http://list.jd.com/737-794-798.html" >平板电视</a>&nbsp;&gt;&nbsp;</span><script type="text/javascript">pageConfig.product.cat=[737,794,798];</script><span><a href="http://www.jd.com/pinpai/798-20710.html" >长虹（CHANGHONG）</a>&nbsp;&gt;&nbsp;<a href="http://item.jd.com/1221882.html" >长虹LED42538ES</a></span>
 	</div>
-</div> --><!--breadcrumb end-->
+</div><!--breadcrumb end-->
 <div class="w">
 	<div id="product-intro" >
 		<div id="name">
@@ -201,10 +201,10 @@
 				<ul class="tab">
 	<li clstag="shangpin|keycount|product|pinfotab" data-widget="tab-item" class="curr"><a href="javascript:;" >商品介绍</a></li>
 	<li clstag="shangpin|keycount|product|pcanshutab" data-widget="tab-item"><a href="javascript:;" >规格参数</a></li>
-	<li clstag="shangpin|keycount|product|packlisttab" data-widget="tab-item"><a href="javascript:;" >包装清单</a></li>
+<!-- 	<li clstag="shangpin|keycount|product|packlisttab" data-widget="tab-item"><a href="javascript:;" >包装清单</a></li>
 	<li clstag="shangpin|keycount|product|pingjiatab" data-widget="tab-item"><a href="javascript:;" >商品评价</a></li>
 	<li clstag="shangpin|keycount|product|psaleservice" data-widget="tab-item"><a href="javascript:;" >售后保障</a></li>
-	<li clstag="shangpin|keycount|product|zhinan" data-widget='tab-item'><a href='javascript:;'>京博士</a></li>
+	<li clstag="shangpin|keycount|product|zhinan" data-widget='tab-item'><a href='javascript:;'>京博士</a></li> -->
 </ul>
 			</div>
 			<div class="mc" data-widget="tab-content" id="product-detail-1">
@@ -245,10 +245,10 @@
 		</div><!--product-detail end-->
 	</div><!--right end-->
 	
-	<!-- <div class="left">
+	<div class="left">
 		<div id="miaozhen7886" class="m"><a href="http://c.nfa.jd.com/adclick?sid=2&amp;cid=163&amp;aid=817&amp;bid=7853&amp;unit=69570&amp;advid=156740&amp;guv=&amp;url=http://sale.jd.com/act/IFkpQYSVnG1Jet.html" target="_blank"><img data-img="2" width="211" height="261" src="http://image.taotao.com/images/2014/10/23/2014102305423212301343.jpg" class="loading-style2"></a></div>
 		<div id="miaozhen7886" class="m"><a href="http://c.nfa.jd.com/adclick?sid=2&amp;cid=163&amp;aid=817&amp;bid=7853&amp;unit=69570&amp;advid=156740&amp;guv=&amp;url=http://sale.jd.com/act/IFkpQYSVnG1Jet.html" target="_blank"><img data-img="2" width="211" height="261" src="http://image.taotao.com/images/2014/10/23/2014102305423212301343.jpg" class="loading-style2"></a></div>
-	</div>left end -->
+	</div><!--left end-->
 	<span class="clr"></span>
 </div>
 <!-- footer start -->
