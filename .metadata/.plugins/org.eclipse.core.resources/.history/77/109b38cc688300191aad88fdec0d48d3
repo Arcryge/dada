@@ -288,11 +288,10 @@ pageConfig.DATA_MScroll =[
 	<li><a href="http://channel.jd.com/auto.html">汽车用品</a></li>
 </ul>
 -->
-<!-- 广告信息 -->
-<!-- 
 <span clstag="homepage|keycount|home2013|18b">
 
-
+<!-- 广告信息 -->
+<!-- 
 	<a target="_blank" title="" href="http://c.fa.jd.com/adclick?sid=2&cid=601&aid=3624&bid=0&unit=35989&advid=105087&guv=&url=http://sale.jd.com/act/PzKvRu4Ld5YnG1Ej.html">
 		<img data-img="2" data-lazyload="/images/543b4d75N686689d7.jpg" width="209" height="155" alt="" />
 	</a>
@@ -301,7 +300,7 @@ pageConfig.DATA_MScroll =[
 </div>
 </div>
 </div>
-<!-- <div class="m plist">
+<div class="m plist">
 <div class="tab-arrow"><b></b></div>
 <div class="sm sm2 fore1 curr"  data-widget="tab-item" data-tag="1622" clstag="homepage|keycount|home2013|18d">
   <div class="smt">
@@ -339,9 +338,9 @@ pageConfig.DATA_MScroll =[
   <div class="smc" data-widget="tab-content">
     <div class="loading-style1"><b></b>加载中，请稍候...</div>
   </div>
-</div></div> -->
+</div></div>
 <!-- ad start -->
-<!-- <div class="sm sm1 brands" clstag="homepage|keycount|home2013|19a">
+<div class="sm sm1 brands" clstag="homepage|keycount|home2013|19a">
 <div class="smt">
 <h3>品牌旗舰店</h3>
 </div>
@@ -364,7 +363,7 @@ pageConfig.DATA_MScroll =[
 <div class="slide" data-lazyload="8"></div>
 </div>
 <span class="clr"></span>
-</div> -->
+</div>
 <!-- 家电通讯楼层 end-->
 </div>
  
