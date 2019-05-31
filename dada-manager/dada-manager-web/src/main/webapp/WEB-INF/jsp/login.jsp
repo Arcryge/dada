@@ -3,6 +3,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="/css/dada.css" media="all" />
 <title>管理员登录</title>
 </head>
 <body style="background-color: #F3F3F3">
@@ -23,17 +24,17 @@
 	        </div>
        	</div>
     </div>
-    
+    <script type="text/javascript" src="/js/jquery-easyui-1.4.1/jquery.min.js"></script>
     <script type="text/javascript">
     	$("#login").click(function(){
     		var username = $("[name=username]").val();
-    		var password = $("[name=password]").val();
+    		var password = $("[name=password]").val(); 
     		
     		if(username!="admin" || password!="admin"){
     			$.messager.alert('错误',"用户名密码不正确！");
     			return ;
     		}
-    		window.location.href="/rest/page/index";
+    		window.location.href="/index";
     	});
     </script>
 </body>
