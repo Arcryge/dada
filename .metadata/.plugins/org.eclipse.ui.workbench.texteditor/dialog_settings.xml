@@ -6,12 +6,13 @@
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="research" key="selection"/>
+		<item value="dada" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="dada"/>
 			<item value="research"/>
 			<item value="调查问卷"/>
 			<item value="left"/>
@@ -19,14 +20,6 @@
 			<item value="setArea"/>
 			<item value="修改"/>
 			<item value="doSwithTab(&apos;pay&apos;)"/>
-			<item value="save_Pay(4)"/>
-			<item value="use_NewConsignee"/>
-			<item value="home-area"/>
-			<item value="service-2013"/>
-			<item value="收藏达达"/>
-			<item value="shortcut-2013"/>
-			<item value="ad1"/>
-			<item value="AD1"/>
 		</list>
 		<list key="replacehistory">
 			<item value="dada-order"/>
