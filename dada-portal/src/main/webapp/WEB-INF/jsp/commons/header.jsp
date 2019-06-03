@@ -17,7 +17,7 @@
 					<input type="button" value="搜索" class="button" onclick="search('key');return false;" clstag="homepage|keycount|home2013|03a">
 				</div>
 			</div>
-			<div id="hotwords" clstag="homepage|keycount|home2013|03b"></div>
+			<!-- <div id="hotwords" clstag="homepage|keycount|home2013|03b"></div> -->
 		</div>
 		<!--search end-->
 <!-- 		<div id="my360buy-2013">
@@ -152,6 +152,6 @@
 		</div>
 	</div>
 </div> -->
-<script type="text/javascript">
+<!-- <script type="text/javascript">
 (function(){if(pageConfig.navId){var object=document.getElementById("nav-"+pageConfig.navId);if(object)object.className+=" curr";}})();
-</script>
+</script> -->
