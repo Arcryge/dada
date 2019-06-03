@@ -20,29 +20,29 @@
 			<div id="hotwords" clstag="homepage|keycount|home2013|03b"></div>
 		</div>
 		<!--search end-->
-		<div id="my360buy-2013">
+<!-- 		<div id="my360buy-2013">
 			<dl>
 				<dt class="ld"><s></s><a href="http://localhost:8084/user/showLogin" clstag="homepage|keycount|home2012|04a">我的达达</a><b></b></dt>
 				<dd>
 					<div class="loading-style1"><b></b>加载中，请稍候...</div>
 				</dd>
 			</dl>
-		</div>
+		</div> -->
 		<!--my360buy end-->
-		<div id="settleup-2013" clstag="homepage|keycount|home2013|05a">
+<!-- 		<div id="settleup-2013" clstag="homepage|keycount|home2013|05a">
 			<dl>
 				<dt class="ld"><s></s><span class="shopping"><span id="shopping-amount"></span></span><a href="/cart/cart.html" id="settleup-url">去购物车结算</a> <b></b> </dt>
-<!-- 				<dd>
+				<dd>
 					<div class="prompt">
 						<div class="loading-style1"><b></b>加载中，请稍候...</div>
 					</div>
 				</dd>
- -->			</dl>
-		</div>
+			</dl>
+		</div> -->
 		<!--settleup end-->
 	</div>
 	<!--header end-->
-	<div class="w">
+<!-- 	<div class="w">
 		<div id="nav-2013">
 			<div id="categorys-2013" class="categorys-2014">
 				<div class="mt ld">
@@ -139,7 +139,7 @@
 					</div>
 				</div>
 			</div>
-			<!-- <div id="treasure" clstag="homepage|keycount|home2013|08a"></div>
+			<div id="treasure" clstag="homepage|keycount|home2013|08a"></div>
 				<ul id="navitems-2013">
 					<li class="fore1" id="nav-home" clstag="homepage|keycount|home2013|07a"><a href="/">首页</a></li>
 					<li class="fore2" id="nav-fashion" clstag="homepage|keycount|home2013|07b"><a href="http://fashion.jd.com/">服装城</a></li>
@@ -149,9 +149,9 @@
 					<li class="fore6" id="nav-shan" clstag="homepage|keycount|home2013|07f"><a href="http://red.jd.com/" target="_blank">闪购</a></li>
 					<li class="fore7" id="nav-jinrong" clstag="homepage|keycount|home2013|07g1"><a href="http://jr.jd.com/" target="_blank">金融</a></li>
 				</ul>
-		</div> -->
+		</div>
 	</div>
-</div>
+</div> -->
 <script type="text/javascript">
 (function(){if(pageConfig.navId){var object=document.getElementById("nav-"+pageConfig.navId);if(object)object.className+=" curr";}})();
 </script>
