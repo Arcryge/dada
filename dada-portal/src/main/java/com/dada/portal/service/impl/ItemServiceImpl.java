@@ -41,7 +41,6 @@ public class ItemServiceImpl implements ItemService {
 
 	@Override
 	public ItemInfo getItemById(Long itemId) {
-
 		try {
 			//调用rest的服务查询商品基本信息
 			String json = HttpClientUtil.doGet(REST_BASE_URL + ITEM_INFO_URL + itemId);
@@ -55,7 +54,6 @@ public class ItemServiceImpl implements ItemService {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-
 		return null;
 	}
 

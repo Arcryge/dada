@@ -6,20 +6,27 @@
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="dada" key="selection"/>
+		<item value="购物车" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="购物车"/>
+			<item value="div"/>
+			<item value="pageConfig"/>
+			<item value="cfg"/>
+			<item value="我的达达"/>
+			<item value="mc"/>
+			<item value="categorys-2013"/>
+			<item value="2013"/>
+			<item value="%22"/>
+			<item value="DATA_MScroll"/>
+			<item value="one"/>
 			<item value="dada"/>
 			<item value="research"/>
 			<item value="调查问卷"/>
 			<item value="left"/>
-			<item value="我的订单"/>
-			<item value="setArea"/>
-			<item value="修改"/>
-			<item value="doSwithTab(&apos;pay&apos;)"/>
 		</list>
 		<list key="replacehistory">
 			<item value="dada-order"/>
@@ -39,7 +46,7 @@
 		<item value="300" key="DIALOG_WIDTH"/>
 		<item value="1|Microsoft YaHei UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Microsoft YaHei UI" key="DIALOG_FONT_NAME"/>
 		<item value="410" key="DIALOG_HEIGHT"/>
-		<item value="1018" key="DIALOG_X_ORIGIN"/>
-		<item value="138" key="DIALOG_Y_ORIGIN"/>
+		<item value="965" key="DIALOG_X_ORIGIN"/>
+		<item value="103" key="DIALOG_Y_ORIGIN"/>
 	</section>
 </section>

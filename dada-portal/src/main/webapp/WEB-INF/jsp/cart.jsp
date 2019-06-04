@@ -56,13 +56,13 @@
         <!-- ************************商品开始********************* -->
         <c:set var="totalPrice" value="0"></c:set>
         <c:forEach items="${cartList}" var="cart">
-        	<c:set var="totalPrice"  value="${ totalPrice + (cart.price * cart.num)}"/>
+        	<c:set var="totalPrice"  value="${totalPrice + (cart.price * cart.num)}"/>
 	        <div id="product_11345721" data-bind="rowid:1" class="item item_selected ">
 		        <div class="item_form clearfix">
 		            <div class="cell p-checkbox"><input data-bind="cbid:1" class="checkbox" type="checkbox" name="checkItem" checked="" value="11345721-1"></div>
 		            <div class="cell p-goods">
 		                <div class="p-img">
-		                	<a href="/item/${cart.id }.html" target="_blank">
+		                	<a href="/item/${cart.id}.html" target="_blank">
 		                		<img clstag="clickcart|keycount|xincart|p-imglistcart" src="${cart.image}" alt="${cart.title}" width="52" height="52">
 		                	</a>
 		                </div>    

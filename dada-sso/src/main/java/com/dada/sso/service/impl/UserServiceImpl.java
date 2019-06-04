@@ -123,7 +123,6 @@ public class UserServiceImpl implements UserService {
 		CookieUtils.setCookie(request, response, "DD_TOKEN", token);
 		//返回token
 		return DadaResult.ok(token);
-
 	}
 
 	@Override

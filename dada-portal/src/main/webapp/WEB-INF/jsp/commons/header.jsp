@@ -1,6 +1,14 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <script type="text/javascript" src="/js/base-v1.js" charset="utf-8"></script>
+<script type="text/javascript">    
+function checkform(){ 
+    if(document.getElementById('key').value.length==0){    
+        document.getElementById("key").value = 'P30';
+        search('key');
+    }
+}
+</script>
 <!--shortcut start-->
 <jsp:include page="shortcut.jsp" />
 <!--shortcut end-->
@@ -13,8 +21,8 @@
 				<ul id="shelper" class="hide">
 				</ul>
 				<div class="form">
-					<input type="text" class="text" accesskey="s" id="key" autocomplete="off" onkeydown="javascript:if(event.keyCode==13) search('key');">
-					<input type="button" value="搜索" class="button" onclick="search('key');return false;" clstag="homepage|keycount|home2013|03a">
+					<input type="text" class="text" accesskey="s" id="key" value="P30" autocomplete="off" onkeydown="javascript:if(event.keyCode==13) checkform();">
+					<input type="button" value="搜索" class="button" onclick="checkform();return false;" clstag="homepage|keycount|home2013|03a">
 				</div>
 			</div>
 			<!-- <div id="hotwords" clstag="homepage|keycount|home2013|03b"></div> -->
