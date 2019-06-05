@@ -6,12 +6,13 @@
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="购物车" key="selection"/>
+		<item value="search" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="search"/>
 			<item value="购物车"/>
 			<item value="div"/>
 			<item value="pageConfig"/>
@@ -26,7 +27,6 @@
 			<item value="dada"/>
 			<item value="research"/>
 			<item value="调查问卷"/>
-			<item value="left"/>
 		</list>
 		<list key="replacehistory">
 			<item value="dada-order"/>

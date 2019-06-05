@@ -6,6 +6,8 @@ function checkform(){
     if(document.getElementById('key').value.length==0){    
         document.getElementById("key").value = 'P30';
         search('key');
+    }else{
+    	search('key');
     }
 }
 </script>
