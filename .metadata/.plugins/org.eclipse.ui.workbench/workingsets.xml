@@ -15,6 +15,9 @@
 <item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/dada-manager-web" type="4"/>
 </workingSet>
 <workingSet editPageId="org.eclipse.jdt.ui.JavaWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1556163269412_3" label="seftrain" name="seftrain"/>
+<workingSet editPageId="org.eclipse.jdt.ui.JavaWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1560081085831_4" label="dada-portal" name="dada-portal">
+<item elementID="=dada-portal" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+</workingSet>
 <workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1529549214081_0" label="Window Working Set" name="Aggregate for window 1529549214081"/>
 <workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1555998828805_2" label="Window Working Set" name="Aggregate for window 1555998828804"/>
 </workingSetManager>
