@@ -23,7 +23,7 @@
 			<item value="false" key="ignoreCase"/>
 			<item value="2" key="scope"/>
 			<item value="false" key="isWholeWord"/>
-			<item value="REST_BASE_URL" key="textPattern"/>
+			<item value="easyui-dialog" key="textPattern"/>
 			<item value="false" key="isRegExSearch"/>
 			<list key="fileNamePatterns">
 				<item value="*"/>
@@ -36,11 +36,10 @@
 			<item value="false" key="ignoreCase"/>
 			<item value="2" key="scope"/>
 			<item value="false" key="isWholeWord"/>
-			<item value="状态" key="textPattern"/>
+			<item value="REST_BASE_URL" key="textPattern"/>
 			<item value="false" key="isRegExSearch"/>
 			<list key="fileNamePatterns">
-				<item value="*jsp"/>
-				<item value="*.js"/>
+				<item value="*"/>
 			</list>
 			<list key="workingSets">
 				<item value="dada-manager"/>
@@ -50,10 +49,11 @@
 			<item value="false" key="ignoreCase"/>
 			<item value="2" key="scope"/>
 			<item value="false" key="isWholeWord"/>
-			<item value="icon-ok" key="textPattern"/>
+			<item value="cfg" key="textPattern"/>
 			<item value="false" key="isRegExSearch"/>
 			<list key="fileNamePatterns">
-				<item value="*"/>
+				<item value="*.jsp"/>
+				<item value="*.js"/>
 			</list>
 			<list key="workingSets">
 				<item value="dada-manager"/>
@@ -63,7 +63,7 @@
 			<item value="false" key="ignoreCase"/>
 			<item value="2" key="scope"/>
 			<item value="false" key="isWholeWord"/>
-			<item value="调查问卷" key="textPattern"/>
+			<item value="research" key="textPattern"/>
 			<item value="false" key="isRegExSearch"/>
 			<list key="fileNamePatterns">
 				<item value="*.js"/>
@@ -77,7 +77,7 @@
 			<item value="false" key="ignoreCase"/>
 			<item value="2" key="scope"/>
 			<item value="false" key="isWholeWord"/>
-			<item value="easyui-dialog" key="textPattern"/>
+			<item value="icon-ok" key="textPattern"/>
 			<item value="false" key="isRegExSearch"/>
 			<list key="fileNamePatterns">
 				<item value="*"/>
@@ -99,7 +99,7 @@
 			<item value="false" key="ignoreCase"/>
 			<item value="2" key="scope"/>
 			<item value="false" key="isWholeWord"/>
-			<item value="分享到" key="textPattern"/>
+			<item value="调查问卷" key="textPattern"/>
 			<item value="false" key="isRegExSearch"/>
 			<list key="fileNamePatterns">
 				<item value="*.js"/>
@@ -113,7 +113,7 @@
 			<item value="false" key="ignoreCase"/>
 			<item value="2" key="scope"/>
 			<item value="false" key="isWholeWord"/>
-			<item value="家用电器" key="textPattern"/>
+			<item value="状态" key="textPattern"/>
 			<item value="false" key="isRegExSearch"/>
 			<list key="fileNamePatterns">
 				<item value="*jsp"/>
@@ -127,17 +127,30 @@
 			<item value="false" key="ignoreCase"/>
 			<item value="2" key="scope"/>
 			<item value="false" key="isWholeWord"/>
-			<item value="research" key="textPattern"/>
+			<item value="家用电器" key="textPattern"/>
 			<item value="false" key="isRegExSearch"/>
 			<list key="fileNamePatterns">
-				<item value="*.js"/>
 				<item value="*jsp"/>
+				<item value="*.js"/>
 			</list>
 			<list key="workingSets">
 				<item value="dada-manager"/>
 			</list>
 		</section>
 		<section name="HISTORY2">
+			<item value="false" key="ignoreCase"/>
+			<item value="2" key="scope"/>
+			<item value="false" key="isWholeWord"/>
+			<item value="SqlMapConfig" key="textPattern"/>
+			<item value="false" key="isRegExSearch"/>
+			<list key="fileNamePatterns">
+				<item value="*"/>
+			</list>
+			<list key="workingSets">
+				<item value="dada-manager"/>
+			</list>
+		</section>
+		<section name="HISTORY3">
 			<item value="false" key="ignoreCase"/>
 			<item value="2" key="scope"/>
 			<item value="false" key="isWholeWord"/>
@@ -151,25 +164,11 @@
 				<item value="dada-manager"/>
 			</list>
 		</section>
-		<section name="HISTORY3">
-			<item value="false" key="ignoreCase"/>
-			<item value="2" key="scope"/>
-			<item value="false" key="isWholeWord"/>
-			<item value="cfg" key="textPattern"/>
-			<item value="false" key="isRegExSearch"/>
-			<list key="fileNamePatterns">
-				<item value="*.jsp"/>
-				<item value="*.js"/>
-			</list>
-			<list key="workingSets">
-				<item value="dada-manager"/>
-			</list>
-		</section>
 		<section name="HISTORY0">
 			<item value="false" key="ignoreCase"/>
 			<item value="2" key="scope"/>
 			<item value="false" key="isWholeWord"/>
-			<item value="search(" key="textPattern"/>
+			<item value="查看大图" key="textPattern"/>
 			<item value="false" key="isRegExSearch"/>
 			<list key="fileNamePatterns">
 				<item value="*.jsp"/>
@@ -183,10 +182,11 @@
 			<item value="false" key="ignoreCase"/>
 			<item value="2" key="scope"/>
 			<item value="false" key="isWholeWord"/>
-			<item value="SqlMapConfig" key="textPattern"/>
+			<item value="search(" key="textPattern"/>
 			<item value="false" key="isRegExSearch"/>
 			<list key="fileNamePatterns">
-				<item value="*"/>
+				<item value="*.js"/>
+				<item value="*.jsp"/>
 			</list>
 			<list key="workingSets">
 				<item value="dada-manager"/>

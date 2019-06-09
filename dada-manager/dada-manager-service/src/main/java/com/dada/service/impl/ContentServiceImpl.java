@@ -123,10 +123,17 @@ public class ContentServiceImpl implements ContentService {
 
 	@Override
 	public DadaResult deleteContent(String ids) {
+
 		String[] idArr = ids.split(",");
 		for (String id : idArr) {
 			//删除内容
 			contentMapper.deleteByPrimaryKey(Long.valueOf(id));
+		}
+		//添加缓存 同步逻辑
+		try {
+			HttpClientUtil.doGet(REST_BASE_URL + REST_CONTENT_SYNC_URL + 89);
+		} catch (Exception e) {
+			e.printStackTrace();
 		}
 		//返回结果
 		return DadaResult.ok();

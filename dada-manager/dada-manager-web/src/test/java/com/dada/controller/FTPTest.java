@@ -41,7 +41,5 @@ public class FTPTest {
 		inputStream.close();
 		//关闭连接
 		ftpClient.logout();
-
 	}
-
 }
